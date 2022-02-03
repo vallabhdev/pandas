@@ -1,3 +1,4 @@
+print("started")
 first = 0
 second = 1
 num = 10
@@ -7,3 +8,4 @@ for x in range(10):
     print(nex, end=" ")
     first = second
     second = nex
+print("ended")
