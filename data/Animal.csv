@@ -1,0 +1,9 @@
+Animal_Name,Class,Population,Weight,Length,Height,Habitats,Status,Country,Places
+Elephant(Asian),Mammal,<50000,11000 pounds,21 feet,6.5–11.5 feet,Forests,Endangered,"India,Sri lanka, Bornean, Sumatran","Eastern Himalayas, Greater Mekong"
+Panda,Mammal,"1,864",220-330 pounds,,>4 feet,"Mountains, Forest Habitat",Vulnerable,China,Yangtze
+Artic Fox,Mammal,Several hundred thousand,3 to 20 pounds,18 to 27 inches,11 inches,Polar Regions,Least Concern,,
+Chimpanzee,Mammal,"172,700 to 299,700",,,,Forest Habitat,Endangered,,Congo Basin
+Jaguars,Mammal,,,<6 feet,,"Forest Habitat, Grasslands",Near Threatened,,"Amazon, Pantanal"
+Lion,Mammal,"23,000",,,,,Vulnerable,,
+Panther,Mammal,,,,,,,,
+Rhino,Mammal,"27,000",,4-10 feet,,"Tropical and subtropical grasslands, savannahs and shrublands, tropical moist forests, deserts and shrublands",,,"Borneo and Sumatra, Namibia, Eastern Himalayas, Coastal East Africa"
