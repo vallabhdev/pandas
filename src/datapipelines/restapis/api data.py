@@ -2,24 +2,29 @@ import json
 import csv
 import requests
 
-url = "https://animals-endangered-environmentalism.p.rapidapi.com/taxonomy/class"
 
+#giving url and query that what to find
+url = "https://animals-endangered-environmentalism.p.rapidapi.com/taxonomy/class"
 querystring = {"q":"mammalia"}
 
+#header of api
 headers = {
     'x-rapidapi-host': "animals-endangered-environmentalism.p.rapidapi.com",
     'x-rapidapi-key': "95afa53298msh4276afcac645857p19ff34jsnd46209186d72"
     }
 
+#response we are getting in the form of data
 response = requests.request("GET", url, headers=headers, params=querystring)
 
 
+#transforming data into list
 apidata=response.text
 apidata.encode("utf-8")
 fetchdata=json.loads(apidata)
 #print(fetchdata[0])
 
 
+#declaring variable names or features of csv
 scientificname=[]
 family=[]
 Class=[]
@@ -50,17 +55,7 @@ useAndTrade=[]
 
 
 
-
-
-"""estimatedExtentOfOccurrenceEooKm2=[]
-estimatedAreaOfOccupancyAooKm2=[]
-extremeFluctuationsInExtentOfOccurrenceEoo=[]
-extremeFluctuationsInTheNumberOfLocations=[]
-#residentialCommercialDevelopment=[]
-#humanIntrusionsDisturbance=[]"""
-
-
-
+#fetching data
 i=0
 for i in range(len(fetchdata)):
     scientificname.append(fetchdata[i]['scientificName'])
@@ -75,9 +70,7 @@ for i in range(len(fetchdata)):
     genus.append(fetchdata[i]['genus'])
     numberofmatureindividuals.append((fetchdata[i]['numberOfMatureIndividuals']))
 
-
-
-
+    #if it has no data, it won't give error
     try:
         native.append(fetchdata[i]['data']['geographicRange']['native'])
     except:
@@ -87,7 +80,7 @@ for i in range(len(fetchdata)):
         extantResident.append(fetchdata[i]['data']['geographicRange']['extantResident'])
     except:
         pass
-        #extantResident.append('NULL')
+
     continuingDeclineOfMatureIndividuals.append(fetchdata[i]['data']['population']['continuingDeclineOfMatureIndividuals'])
     currentPopulationTrend.append(fetchdata[i]['data']['population']['currentPopulationTrend'])
     threats.append(fetchdata[i]['data']['threats'])
@@ -101,7 +94,7 @@ for i in range(len(fetchdata)):
 
 
 
-
+#defining row and header of csv file
 rows=zip(scientificname,family,Class,yearassessed,commonname,yearpublished,kingdom,phylum,populationTrend,genus,
          numberofmatureindividuals,native,numberoflocation,extantResident,continuingDeclineOfMatureIndividuals,
          currentPopulationTrend,threats,habitatAndEcologysystem,generationLengthYears,habitatType,habitatname,
@@ -111,6 +104,9 @@ header=['scientificname','family','Class','yearassessed','commonname','yearpubli
          'currentPopulationTrend','threats','habitatAndEcologysystem','generationLengthYears','habitatType','habitatname',
          'conservationActions','iucnRedListCategoryAndCriteria','useAndTrade']
 
+
+
+#storing data into csv
 with open('bytaxonomymammalia.csv', "w", newline="") as f:
     writer = csv.writer(f)
     writer.writerow(header)
@@ -119,4 +115,8 @@ with open('bytaxonomymammalia.csv', "w", newline="") as f:
             writer.writerow(row)
         except:
             pass
+
+
+
+
 
