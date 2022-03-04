@@ -7,7 +7,7 @@ from google.cloud import storage
 gcp_key = 'gcp_key.json'
 bucket_name = 'preserve_endangered_species_01'
 file_name = 'Endangered_Species.csv'
-upload_file_name = "testfile.txt"
+upload_file_name = "../../../file_read_and_write/testfile.txt"
 # create storage client
 client = storage.Client.from_service_account_json(gcp_key)
 
