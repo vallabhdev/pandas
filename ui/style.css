@@ -1,39 +1,3 @@
-/*
-	The7 by TEMPLATE STOCK
-	templatestock.co @templatestock
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
-
-/*
-
-[Table of content]
-
-1. General Styling
-2. Header
-3. Home Slider, Parallax & Video
-4. Services Section
-5. Work Section
-6. Logo Carousel
-7. CLient Carousel
-8. Blog Section
-9. Pricing Section
-10. Contact & Comment Forms
-11. Footer
-12. Loader
-13. Clearfix
-
-
-[Color codes]
-Green #1abc9c
-Dark Blue #16a085
-Grey #ECF0F1
-
-*/
-
-/* *********************************************************
-  General Styling 
-********************************************************* */
-
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -325,10 +289,8 @@ blockquote p {
 .logo {
   display: block;
   float: left;
-  width: 104px;
-  height: 46px;
-  text-indent: -9999px;
-  background: url(images/logo.svg) no-repeat;
+  font-size: 24px;
+  Color: White;
   background-size: 104px 46px;
 }
 
