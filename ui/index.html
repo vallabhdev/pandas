@@ -21,7 +21,7 @@
         <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
              <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
              <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        </head>
+    </head>
         <body id="home">
             <!-- Header -->
             <header id="top-header" class="header-home">
@@ -36,7 +36,10 @@
                                 <label for="nav-button" onclick></label>
                                 <ul class="nav-container">
                                     <li><a href="#home" class="current">Home</a></li>
+                                    <li><a href="#search">Search</a></li>
+                                    <li><a href="#gallery">Gallery</a></li>
                                     <li><a href="#team">Team</a></li>
+                                    <li><a href="#citation">Citation</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -48,23 +51,30 @@
             <div class="parallax-section">
                 <div class="grid grid-pad">
                     <div class="col-1-1">
-                         <div class="content content-header" >
-                             <div class="row">
-                                 <div class="input-field">
-                                     <form enctype = "multipart/form-data" action = "save_file.py" method = "post">
-                                         <input type="file" id="myfile" name="myfile" >
-                                         <br><br>
-                                         <input type="submit" value="Submit" class="width:92px;height:32px;">
-                                     </form>
-                                 </div>
-                             </div>
+                         <div class="content content-header">
+                             <br>
+                             <br>
+                             <br>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- End Parallax Section -->
+            <!-- Search Animal Section-->
+            <div class="wrap grey recent-wrap" id="search">
+                <section class="grid grid-pad">
+                    <h2>Search an Animal</h2>
+                    <div class="input-field">
+                        <form enctype = "multipart/form-data" action = "/upload" method = "POST">
+                            <input type="file" name="myfile" >
+                            <input type="submit" value="Submit" class="width:92px;height:32px;">
+                        </form>
+                    </div>
+                </section>
+            </div>
+            <!-- End Search Animal Section-->
             <!-- Work Section -->
-            <div class="wrap grey recent-wrap" id="Gallery">
+            <div class="wrap grey recent-wrap" id="gallery">
                 <section class="grid grid-pad">
                     <h2>Gallery</h2>
                     <!-- Start of Filter section -->
@@ -107,103 +117,103 @@
                 </section>
             </div>
             <!-- End Work Section -->
-                <!-- Team Section -->
-                <div class="wrap team-wrap grey" id="team">
-                    <div class="grid grid-pad">
-                        <div class="content" >
-                            <h2>Our Team</h2>
-                            <div class="col-1-4" >
-                                <div class="content staff-content">
-                                    <div class="recent-work staff-img">
-                                        <div class="img-wrap staff-img">
-                                            <img src="images/team/user.jpeg" alt="">
-                                            <div class="team-social">
-                                                <a class="sl-fb" href="#"><i class="icon-facebook"></i></a>
-                                                <a class="sl-tw" href="#"><i class="icon-twitter"></i></a>
-                                                <a class="sl-gp" href="#"><i class="icon-googleplus2"></i></a>
-                                                <a class="sl-ln" href="#"><i class="icon-linkedin"></i></a>
-                                            </div>
+            <!-- Team Section -->
+            <div class="wrap team-wrap grey" id="team">
+                <div class="grid grid-pad">
+                    <div class="content" >
+                        <h2>Our Team</h2>
+                        <div class="col-1-4" >
+                            <div class="content staff-content">
+                                <div class="recent-work staff-img">
+                                    <div class="img-wrap staff-img">
+                                        <img src="images/team/user.jpeg" alt="">
+                                        <div class="team-social">
+                                            <a class="sl-fb" href="#"><i class="icon-facebook"></i></a>
+                                            <a class="sl-tw" href="#"><i class="icon-twitter"></i></a>
+                                            <a class="sl-gp" href="#"><i class="icon-googleplus2"></i></a>
+                                            <a class="sl-ln" href="#"><i class="icon-linkedin"></i></a>
                                         </div>
-                                        <div class="work-info staff-info">
-                                            <h5>user 1</h5>
-                                            <span>lead</span>
-                                        </div>
+                                    </div>
+                                    <div class="work-info staff-info">
+                                        <h5>user 1</h5>
+                                        <span>lead</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-1-4" >
-                                <div class="content staff-content">
-                                    <div class="recent-work staff-img">
-                                        <div class="img-wrap staff-img">
-                                            <img src="images/team/user.jpeg" alt="">
-                                        </div>
-                                        <div class="work-info staff-info">
-                                            <h5>user 2</h5>
-                                            <span>manager</span>
-                                        </div>
+                        </div>
+                        <div class="col-1-4" >
+                            <div class="content staff-content">
+                                <div class="recent-work staff-img">
+                                    <div class="img-wrap staff-img">
+                                        <img src="images/team/user.jpeg" alt="">
+                                    </div>
+                                    <div class="work-info staff-info">
+                                        <h5>user 2</h5>
+                                        <span>manager</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-1-4" >
-                                <div class="content staff-content">
-                                    <div class="recent-work staff-img">
-                                        <div class="img-wrap staff-img">
-                                            <img src="images/team/user.jpeg" alt="">
-                                        </div>
-                                        <div class="work-info staff-info">
-                                            <h5>user 3</h5>
-                                            <span>developer</span>
-                                        </div>
+                        </div>
+                        <div class="col-1-4" >
+                            <div class="content staff-content">
+                                <div class="recent-work staff-img">
+                                    <div class="img-wrap staff-img">
+                                        <img src="images/team/user.jpeg" alt="">
+                                    </div>
+                                    <div class="work-info staff-info">
+                                        <h5>user 3</h5>
+                                        <span>developer</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-1-4" >
-                                <div class="content staff-content">
-                                    <div class="recent-work staff-img">
-                                        <div class="img-wrap staff-img">
-                                            <img src="images/team/user.jpeg" alt="">
-                                        </div>
-                                        <div class="work-info staff-info">
-                                            <h5>user 4</h5>
-                                            <span>Developer</span>
-                                        </div>
+                        </div>
+                        <div class="col-1-4" >
+                            <div class="content staff-content">
+                                <div class="recent-work staff-img">
+                                    <div class="img-wrap staff-img">
+                                        <img src="images/team/user.jpeg" alt="">
+                                    </div>
+                                    <div class="work-info staff-info">
+                                        <h5>user 4</h5>
+                                        <span>Developer</span>
                                     </div>
                                 </div>
+                            </div>
 
-                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- End Team Section -->
-                <!-- Footer -->
-                <footer class="wrap">
-                    <div class="grid grid-pad" >
-                        <div class="col-1-4">
-                            <div class="content">
-                                <div class="footer-widget">
-                                    <h3>Citation :</h3>
-                                    <div class="textwidget">
-                                        <p>Site 1.</p><br>
-                                        <p>Site 2.</p><br>
-                                        <p>Site 3.</p><br>
-                                        <p>Site 4.</p><br>
-                                    </div>
+            </div>
+            <!-- End Team Section -->
+            <!-- Footer -->
+            <footer class="wrap" id="citation">
+                <div class="grid grid-pad" >
+                    <div class="col-1-4">
+                        <div class="content">
+                            <div class="footer-widget">
+                                <h3>Citation :</h3>
+                                <div class="textwidget">
+                                    <p>Site 1.</p><br>
+                                    <p>Site 2.</p><br>
+                                    <p>Site 3.</p><br>
+                                    <p>Site 4.</p><br>
                                 </div>
                             </div>
                         </div>
-                    </div>>
-                </footer>
-                <!-- End Footer -->
-                <!-- JS -->
-                <script src="js/jquery.js"></script>
-                <script src="js/main.js"></script>
-                <script src="js/mixitup.js"></script>
-                <script src="js/smoothscroll.js"></script>
-                <script src="js/jquery.nav.js"></script>
-                <script src="js/owl-carousel/owl.carousel.min.js"></script>
-                <script src="https://maps.googleapis.com/maps/api/js"></script>
-                <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-                <script src="js/jquery.counterup.min.js"></script>
-                <script src="js/lightcase.min.js"></script>
-            </body>
-        </html>
+                    </div>
+                </div>>
+            </footer>
+            <!-- End Footer -->
+            <!-- JS -->
+            <script src="js/jquery.js"></script>
+            <script src="js/main.js"></script>
+            <script src="js/mixitup.js"></script>
+            <script src="js/smoothscroll.js"></script>
+            <script src="js/jquery.nav.js"></script>
+            <script src="js/owl-carousel/owl.carousel.min.js"></script>
+            <script src="https://maps.googleapis.com/maps/api/js"></script>
+            <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+            <script src="js/jquery.counterup.min.js"></script>
+            <script src="js/lightcase.min.js"></script>
+        </body>
+</html>
