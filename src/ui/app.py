@@ -20,8 +20,17 @@ def remediation():
     return pd.read_csv('../../data/Remediation_measures.csv').drop(columns=['Country', 'Effect_of_Measures'])
 
 
+@app.route("/search/<name>")
+def search_by_name(name):
+    title = "Search result for {}".format(name)
+    df = basic_details()
+    df = df[df['Animal_Name'] == name]
+    return render_template("index.html", title=title, tables=[df.to_html(classes='data')],
+                           titles=df.columns.values)
+
+
 @app.route("/")
-def home():
+def default():
     title = "Details of Mammals under threat..."
     df = basic_details()
     return render_template("index.html", title=title, tables=[df.to_html(classes='data', header="true")],
@@ -50,3 +59,7 @@ def remediation_steps():
     df = remediation()
     return render_template("index.html", title=title, tables=[df.to_html(classes='data', header='true')],
                            titles=df.columns.values)
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
