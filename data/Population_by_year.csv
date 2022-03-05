@@ -132,4 +132,547 @@ Elephant(Asian),Vietnam,1995,280
 Elephant(Asian),Vietnam,1997,165
 Elephant(Asian),Vietnam,2000,100
 Elephant(Asian),Vietnam,2016,101
-Panda,,2000,
+Lion,"Africa(central,East,West)",1993,4580
+Lion,"Africa(central,East,West)",1996,3610
+Lion,"Africa(central,East,West)",1998,3500
+Lion,"Africa(central,East,West)",2001,2900
+Lion,"Africa(central,East,West)",2003,3690
+Lion,"Africa(central,East,West)",2005,2400
+Lion,"Africa(central,East,West)",2008,2000
+Lion,"Africa(central,East,West)",2011,1900
+Lion,"Africa(central,East,West)",2013,1810
+Lion,"Africa(central,East,West)",2014,1800
+Lion,Africa(south),1993,2250
+Lion,Africa(south),1996,2130
+Lion,Africa(south),1998,2125
+Lion,Africa(south),2001,2000
+Lion,Africa(south),2003,1990
+Lion,Africa(south),2005,2000
+Lion,Africa(south),2008,1990
+Lion,Africa(south),2011,2000
+Lion,Africa(south),2013,2095
+Lion,Africa(south),2014,2025
+Lion,India,1936,287
+Lion,India,1950,227
+Lion,India,1955,290
+Lion,India,1963,285
+Lion,India,1968,17
+Lion,India,1974,180
+Lion,India,1979,205
+Lion,India,1985,239
+Lion,India,1990,284
+Lion,India,1995,304
+Lion,India,2001,327
+Lion,India,2005,359
+Lion,India,2010,411
+Lion,India,2015,523
+Lion,world,1900,400000
+Lion,world,1910,337000
+Lion,world,1920,225500
+Lion,world,1930,150000
+Lion,world,1940,145000
+Lion,world,1950,139000
+Lion,world,1960,100000
+Lion,world,1970,83100
+Lion,world,1980,73000
+Lion,world,1990,62000
+Lion,world,2000,42000
+Lion,world,2010,33000
+Lion,world,2020,22500
+Chimpanzee,world,1900,2000000
+Chimpanzee,world,1960,1000000
+Chimpanzee,world,1979,100000
+Chimpanzee,world,1987,200000
+Chimpanzee,world,1989,228000
+Chimpanzee,world,2000,230000
+Chimpanzee,world,2003,250000
+Chimpanzee,world,2020,300000
+Arctic fox,"Northern (Asia, America and Europe)",1978,3050
+Arctic fox,"Northern (Asia, America and Europe)",1980,3700
+Arctic fox,"Northern (Asia, America and Europe)",1982,4100
+Arctic fox,"Northern (Asia, America and Europe)",1984,4500
+Arctic fox,"Northern (Asia, America and Europe)",1986,5600
+Arctic fox,"Northern (Asia, America and Europe)",1988,5800
+Arctic fox,"Northern (Asia, America and Europe)",1990,5900
+Arctic fox,"Northern (Asia, America and Europe)",1992,5750
+Arctic fox,"Northern (Asia, America and Europe)",1994,5560
+Arctic fox,"Northern (Asia, America and Europe)",1996,5600
+Arctic fox,"Northern (Asia, America and Europe)",1998,6450
+Arctic fox,"Northern (Asia, America and Europe)",2000,7800
+Arctic fox,"Northern (Asia, America and Europe)",2002,8500
+Arctic fox,"Northern (Asia, America and Europe)",2004,8400
+Arctic fox,"Northern (Asia, America and Europe)",2006,10800
+Arctic fox,"Northern (Asia, America and Europe)",2008,11700
+Arctic fox,"Northern (Asia, America and Europe)",2010,7900
+Arctic fox,"Northern (Asia, America and Europe)",2012,6000
+Arctic fox,"Northern (Asia, America and Europe)",2014,6400
+Panda,world,1900,8600
+Panda,world,1910,7900
+Panda,world,1920,6000
+Panda,world,1930,5450
+Panda,world,1940,4100
+Panda,world,1950,3300
+Panda,world,1960,2960
+Panda,world,1970,1300
+Panda,world,1980,1050
+Panda,world,1990,1200
+Panda,world,2000,1200
+Panda,world,2010,1500
+Panda,world,2020,1864
+Rhino(Sumatran),Indonesia,2007,180
+Rhino(Sumatran),Indonesia,2009,170
+Rhino(Sumatran),Indonesia,2016,76
+Rhino(Sumatran),Indonesia,2018,59
+Rhino(Sumatran),Malaysia,2007,100
+Rhino(Sumatran),Malaysia,2009,50
+Rhino(Sumatran),Malaysia,2016,0
+Rhino(Sumatran),Malaysia,2018,0
+Rhino(Sumatran),World,1985,600
+Rhino(Sumatran),World,1995,300
+Rhino(Sumatran),World,2007,280
+Rhino(Sumatran),World,2009,220
+Rhino(Sumatran),World,2013,100
+Rhino(Sumatran),World,2016,76
+Rhino(Sumatran),World,2018,59
+Rhino(Black),Angola,1980,300
+Rhino(Black),Angola,1984,90
+Rhino(Black),Angola,1987,0
+Rhino(Black),Angola,1991,50
+Rhino(Black),Angola,1992,50
+Rhino(Black),Angola,1993,10
+Rhino(Black),Angola,1995,0
+Rhino(Black),Angola,1997,0
+Rhino(Black),Angola,2010,1
+Rhino(Black),Botswana,1980,30
+Rhino(Black),Botswana,1984,10
+Rhino(Black),Botswana,1987,10
+Rhino(Black),Botswana,1991,10
+Rhino(Black),Botswana,1992,5
+Rhino(Black),Botswana,1993,4
+Rhino(Black),Botswana,1995,0
+Rhino(Black),Botswana,1997,0
+Rhino(Black),Botswana,2005,5
+Rhino(Black),Botswana,2010,7
+Rhino(Black),Botswana,2017,50
+Rhino(Black),Cameroon,1980,110
+Rhino(Black),Cameroon,1984,110
+Rhino(Black),Cameroon,1987,30
+Rhino(Black),Cameroon,1991,50
+Rhino(Black),Cameroon,1992,35
+Rhino(Black),Cameroon,1993,27
+Rhino(Black),Cameroon,1995,7
+Rhino(Black),Cameroon,1997,10
+Rhino(Black),Cameroon,2005,0
+Rhino(Black),Central African Republic,1980,3000
+Rhino(Black),Central African Republic,1984,170
+Rhino(Black),Central African Republic,1987,10
+Rhino(Black),Central African Republic,1991,5
+Rhino(Black),Central African Republic,1992,0
+Rhino(Black),Chad,1980,25
+Rhino(Black),Chad,1984,5
+Rhino(Black),Chad,1987,3
+Rhino(Black),Chad,1991,0
+Rhino(Black),Chad,1992,0
+Rhino(Black),Cote d'Ivoire,2017,0
+Rhino(Black),Eswatini,1980,0
+Rhino(Black),Eswatini,1984,0
+Rhino(Black),Eswatini,1987,6
+Rhino(Black),Eswatini,1991,6
+Rhino(Black),Eswatini,1992,6
+Rhino(Black),Eswatini,1993,4
+Rhino(Black),Eswatini,1995,9
+Rhino(Black),Eswatini,1997,10
+Rhino(Black),Eswatini,2005,16
+Rhino(Black),Eswatini,2010,17
+Rhino(Black),Eswatini,2017,21
+Rhino(Black),Ethiopia,1980,20
+Rhino(Black),Ethiopia,1984,10
+Rhino(Black),Ethiopia,1991,0
+Rhino(Black),Ethiopia,1992,0
+Rhino(Black),Ethiopia,1993,5
+Rhino(Black),Ethiopia,1995,1
+Rhino(Black),Ethiopia,1997,0
+Rhino(Black),Kenya,1980,1500
+Rhino(Black),Kenya,1984,550
+Rhino(Black),Kenya,1987,381
+Rhino(Black),Kenya,1991,398
+Rhino(Black),Kenya,1992,414
+Rhino(Black),Kenya,1993,417
+Rhino(Black),Kenya,1995,420
+Rhino(Black),Kenya,1997,424
+Rhino(Black),Kenya,2005,540
+Rhino(Black),Kenya,2010,594
+Rhino(Black),Kenya,2017,745
+Rhino(Black),Malawi,1980,40
+Rhino(Black),Malawi,1984,20
+Rhino(Black),Malawi,1987,25
+Rhino(Black),Malawi,1991,5
+Rhino(Black),Malawi,1992,0
+Rhino(Black),Malawi,1993,2
+Rhino(Black),Malawi,1995,2
+Rhino(Black),Malawi,1997,3
+Rhino(Black),Malawi,2005,10
+Rhino(Black),Malawi,2010,24
+Rhino(Black),Malawi,2017,28
+Rhino(Black),Mozambique,1980,250
+Rhino(Black),Mozambique,1984,130
+Rhino(Black),Mozambique,1987,0
+Rhino(Black),Mozambique,1991,50
+Rhino(Black),Mozambique,1992,50
+Rhino(Black),Mozambique,1993,45
+Rhino(Black),Mozambique,1995,0
+Rhino(Black),Mozambique,1997,13
+Rhino(Black),Mozambique,2010,1
+Rhino(Black),Mozambique,2017,1
+Rhino(Black),Namibia,1980,300
+Rhino(Black),Namibia,1984,400
+Rhino(Black),Namibia,1987,449
+Rhino(Black),Namibia,1991,479
+Rhino(Black),Namibia,1992,489
+Rhino(Black),Namibia,1993,583
+Rhino(Black),Namibia,1995,598
+Rhino(Black),Namibia,1997,707
+Rhino(Black),Namibia,2005,1141
+Rhino(Black),Namibia,2010,1750
+Rhino(Black),Namibia,2017,1857
+Rhino(Black),Rwanda,1980,30
+Rhino(Black),Rwanda,1984,15
+Rhino(Black),Rwanda,1987,15
+Rhino(Black),Rwanda,1992,15
+Rhino(Black),Rwanda,1993,10
+Rhino(Black),Rwanda,1995,4
+Rhino(Black),Rwanda,1997,4
+Rhino(Black),Rwanda,2005,1
+Rhino(Black),Rwanda,2017,19
+Rhino(Black),Senegal,2017,0
+Rhino(Black),Somalia,1980,300
+Rhino(Black),Somalia,1984,90
+Rhino(Black),Somalia,1991,0
+Rhino(Black),Somalia,1992,0
+Rhino(Black),South Africa,1980,630
+Rhino(Black),South Africa,1984,640
+Rhino(Black),South Africa,1987,577
+Rhino(Black),South Africa,1991,771
+Rhino(Black),South Africa,1992,819
+Rhino(Black),South Africa,1993,897
+Rhino(Black),South Africa,1995,1024
+Rhino(Black),South Africa,1997,1043
+Rhino(Black),South Africa,2005,1379
+Rhino(Black),South Africa,2010,1915
+Rhino(Black),South Africa,2017,2046
+Rhino(Black),Sudan,1980,300
+Rhino(Black),Sudan,1984,100
+Rhino(Black),Sudan,1987,3
+Rhino(Black),Sudan,1991,0
+Rhino(Black),Sudan,1993,0
+Rhino(Black),Sudan,1995,0
+Rhino(Black),Tanzania,1980,3795
+Rhino(Black),Tanzania,1984,3130
+Rhino(Black),Tanzania,1987,275
+Rhino(Black),Tanzania,1991,185
+Rhino(Black),Tanzania,1992,127
+Rhino(Black),Tanzania,1993,132
+Rhino(Black),Tanzania,1995,32
+Rhino(Black),Tanzania,1997,46
+Rhino(Black),Tanzania,2005,101
+Rhino(Black),Tanzania,2010,113
+Rhino(Black),Tanzania,2017,160
+Rhino(Black),Uganda,1980,5
+Rhino(Black),Uganda,1984,0
+Rhino(Black),Uganda,1991,3
+Rhino(Black),Uganda,1992,0
+Rhino(Black),Uganda,1995,0
+Rhino(Black),Uganda,2017,0
+Rhino(Black),World,1960,100000
+Rhino(Black),World,1970,65000
+Rhino(Black),World,1980,14785
+Rhino(Black),World,1984,8800
+Rhino(Black),World,1987,3665
+Rhino(Black),World,1991,3450
+Rhino(Black),World,1992,2475
+Rhino(Black),World,1993,2550
+Rhino(Black),World,1995,2410
+Rhino(Black),World,2005,3726
+Rhino(Black),World,2010,4880
+Rhino(Black),World,2012,4845
+Rhino(Black),World,2015,5214
+Rhino(Black),World,2017,5495
+Rhino(Black),Zambia,1980,2750
+Rhino(Black),Zambia,1984,1650
+Rhino(Black),Zambia,1987,106
+Rhino(Black),Zambia,1991,40
+Rhino(Black),Zambia,1992,40
+Rhino(Black),Zambia,1993,33
+Rhino(Black),Zambia,1995,0
+Rhino(Black),Zambia,1997,0
+Rhino(Black),Zambia,2005,6
+Rhino(Black),Zambia,2010,27
+Rhino(Black),Zambia,2017,48
+Rhino(Black),Zimbabwe,1980,1400
+Rhino(Black),Zimbabwe,1984,1680
+Rhino(Black),Zimbabwe,1987,1775
+Rhino(Black),Zimbabwe,1991,1400
+Rhino(Black),Zimbabwe,1992,425
+Rhino(Black),Zimbabwe,1993,381
+Rhino(Black),Zimbabwe,1995,315
+Rhino(Black),Zimbabwe,1997,339
+Rhino(Black),Zimbabwe,2005,527
+Rhino(Black),Zimbabwe,2010,431
+Rhino(Black),Zimbabwe,2017,520
+Rhino(Javan),Indonesia,2007,45
+Rhino(Javan),Indonesia,2009,40
+Rhino(Javan),Indonesia,2010,40
+Rhino(Javan),Indonesia,2012,58
+Rhino(Javan),Indonesia,2018,66
+Rhino(Javan),Vietnam,2007,5
+Rhino(Javan),Vietnam,2009,1
+Rhino(Javan),Vietnam,2010,0
+Rhino(Javan),Vietnam,2011,0
+Rhino(Javan),Vietnam,2012,0
+Rhino(Javan),Vietnam,2013,0
+Rhino(Javan),Vietnam,2014,0
+Rhino(Javan),Vietnam,2015,0
+Rhino(Javan),Vietnam,2016,0
+Rhino(Javan),Vietnam,2017,0
+Rhino(Javan),Vietnam,2018,0
+Rhino(Javan),World,1965,25
+Rhino(Javan),World,1975,30
+Rhino(Javan),World,1980,50
+Rhino(Javan),World,1985,60
+Rhino(Javan),World,1990,60
+Rhino(Javan),World,1995,50
+Rhino(Javan),World,2000,45
+Rhino(Javan),World,2005,40
+Rhino(Javan),World,2007,50
+Rhino(Javan),World,2009,41
+Rhino(Javan),World,2010,40
+Rhino(Javan),World,2013,58
+Rhino(Javan),World,2018,66
+Rhino(Greater One-Horned Rhino),India,1986,1334
+Rhino(Greater One-Horned Rhino),India,2007,2150
+Rhino(Greater One-Horned Rhino),India,2009,2363
+Rhino(Greater One-Horned Rhino),India,2016,2912
+Rhino(Greater One-Horned Rhino),India,2018,2939
+Rhino(Greater One-Horned Rhino),Nepal,1950,800
+Rhino(Greater One-Horned Rhino),Nepal,1957,400
+Rhino(Greater One-Horned Rhino),Nepal,1959,300
+Rhino(Greater One-Horned Rhino),Nepal,1966,100
+Rhino(Greater One-Horned Rhino),Nepal,1968,108
+Rhino(Greater One-Horned Rhino),Nepal,1972,147
+Rhino(Greater One-Horned Rhino),Nepal,1978,310
+Rhino(Greater One-Horned Rhino),Nepal,1986,375
+Rhino(Greater One-Horned Rhino),Nepal,1988,358
+Rhino(Greater One-Horned Rhino),Nepal,1994,466
+Rhino(Greater One-Horned Rhino),Nepal,2000,612
+Rhino(Greater One-Horned Rhino),Nepal,2005,409
+Rhino(Greater One-Horned Rhino),Nepal,2007,413
+Rhino(Greater One-Horned Rhino),Nepal,2008,444
+Rhino(Greater One-Horned Rhino),Nepal,2009,435
+Rhino(Greater One-Horned Rhino),Nepal,2011,534
+Rhino(Greater One-Horned Rhino),Nepal,2016,645
+Rhino(Greater One-Horned Rhino),Nepal,2018,649
+Rhino(Greater One-Horned Rhino),Pakistan,1986,2
+Rhino(Greater One-Horned Rhino),Pakistan,2007,2
+Rhino(Greater One-Horned Rhino),Pakistan,2009,2
+Rhino(Greater One-Horned Rhino),Pakistan,2016,0
+Rhino(Greater One-Horned Rhino),Pakistan,2018,0
+Rhino(Greater One-Horned Rhino),World,1910,40
+Rhino(Greater One-Horned Rhino),World,1966,40
+Rhino(Greater One-Horned Rhino),World,1972,670
+Rhino(Greater One-Horned Rhino),World,1980,1250
+Rhino(Greater One-Horned Rhino),World,1986,1711
+Rhino(Greater One-Horned Rhino),World,2007,2565
+Rhino(Greater One-Horned Rhino),World,2009,2800
+Rhino(Greater One-Horned Rhino),World,2016,3557
+Rhino(Greater One-Horned Rhino),World,2018,3588
+Rhino(Southern white),Botswana,1895,0
+Rhino(Southern white),Botswana,1929,0
+Rhino(Southern white),Botswana,1948,0
+Rhino(Southern white),Botswana,1968,0
+Rhino(Southern white),Botswana,1984,190
+Rhino(Southern white),Botswana,1987,125
+Rhino(Southern white),Botswana,1991,56
+Rhino(Southern white),Botswana,1992,27
+Rhino(Southern white),Botswana,1993,18
+Rhino(Southern white),Botswana,1995,20
+Rhino(Southern white),Botswana,1997,23
+Rhino(Southern white),Botswana,2005,99
+Rhino(Southern white),Botswana,2010,135
+Rhino(Southern white),Botswana,2017,452
+Rhino(Southern white),Cote d'Ivoire,2017,1
+Rhino(Southern white),Eswatini,1895,0
+Rhino(Southern white),Eswatini,1929,0
+Rhino(Southern white),Eswatini,1948,0
+Rhino(Southern white),Eswatini,1968,0
+Rhino(Southern white),Eswatini,1984,60
+Rhino(Southern white),Eswatini,1987,80
+Rhino(Southern white),Eswatini,1991,60
+Rhino(Southern white),Eswatini,1992,46
+Rhino(Southern white),Eswatini,1993,33
+Rhino(Southern white),Eswatini,1995,41
+Rhino(Southern white),Eswatini,1997,50
+Rhino(Southern white),Eswatini,2005,75
+Rhino(Southern white),Eswatini,2010,88
+Rhino(Southern white),Eswatini,2017,66
+Rhino(Southern white),Ivory Coast,1895,0
+Rhino(Southern white),Ivory Coast,1929,0
+Rhino(Southern white),Ivory Coast,1948,0
+Rhino(Southern white),Ivory Coast,1968,0
+Rhino(Southern white),Ivory Coast,1984,0
+Rhino(Southern white),Ivory Coast,1987,0
+Rhino(Southern white),Ivory Coast,1991,5
+Rhino(Southern white),Ivory Coast,1992,5
+Rhino(Southern white),Ivory Coast,1993,5
+Rhino(Southern white),Ivory Coast,1995,4
+Rhino(Southern white),Ivory Coast,1997,4
+Rhino(Southern white),Kenya,1895,0
+Rhino(Southern white),Kenya,1929,0
+Rhino(Southern white),Kenya,1948,0
+Rhino(Southern white),Kenya,1968,0
+Rhino(Southern white),Kenya,1984,33
+Rhino(Southern white),Kenya,1987,47
+Rhino(Southern white),Kenya,1991,57
+Rhino(Southern white),Kenya,1992,74
+Rhino(Southern white),Kenya,1993,87
+Rhino(Southern white),Kenya,1995,122
+Rhino(Southern white),Kenya,1997,137
+Rhino(Southern white),Kenya,2005,234
+Rhino(Southern white),Kenya,2017,510
+Rhino(Southern white),Mozambique,1895,0
+Rhino(Southern white),Mozambique,1929,0
+Rhino(Southern white),Mozambique,1948,0
+Rhino(Southern white),Mozambique,1968,0
+Rhino(Southern white),Mozambique,1984,1
+Rhino(Southern white),Mozambique,2005,7
+Rhino(Southern white),Mozambique,2010,6
+Rhino(Southern white),Mozambique,2017,29
+Rhino(Southern white),Namibia,1895,0
+Rhino(Southern white),Namibia,1929,0
+Rhino(Southern white),Namibia,1948,0
+Rhino(Southern white),Namibia,1968,0
+Rhino(Southern white),Namibia,1984,70
+Rhino(Southern white),Namibia,1987,63
+Rhino(Southern white),Namibia,1991,80
+Rhino(Southern white),Namibia,1992,91
+Rhino(Southern white),Namibia,1993,98
+Rhino(Southern white),Namibia,1995,107
+Rhino(Southern white),Namibia,1997,141
+Rhino(Southern white),Namibia,2005,293
+Rhino(Southern white),Namibia,2010,469
+Rhino(Southern white),Namibia,2017,975
+Rhino(Southern white),Senegal,2017,3
+Rhino(Southern white),South Africa,1895,20
+Rhino(Southern white),South Africa,1929,150
+Rhino(Southern white),South Africa,1948,550
+Rhino(Southern white),South Africa,1968,1800
+Rhino(Southern white),South Africa,1984,3234
+Rhino(Southern white),South Africa,1987,4137
+Rhino(Southern white),South Africa,1991,5057
+Rhino(Southern white),South Africa,1992,5297
+Rhino(Southern white),South Africa,1993,6376
+Rhino(Southern white),South Africa,1995,7095
+Rhino(Southern white),South Africa,1997,7913
+Rhino(Southern white),South Africa,2005,13521
+Rhino(Southern white),South Africa,2010,18796
+Rhino(Southern white),South Africa,2017,15625
+Rhino(Southern white),Uganda,2005,4
+Rhino(Southern white),Uganda,2010,9
+Rhino(Southern white),Uganda,2017,22
+Rhino(Southern white),World,1895,20
+Rhino(Southern white),World,1929,150
+Rhino(Southern white),World,1948,550
+Rhino(Southern white),World,1968,1800
+Rhino(Southern white),World,1984,3800
+Rhino(Southern white),World,1987,4665
+Rhino(Southern white),World,1991,5565
+Rhino(Southern white),World,1992,5790
+Rhino(Southern white),World,1993,6760
+Rhino(Southern white),World,1995,7530
+Rhino(Southern white),World,2005,14543
+Rhino(Southern white),World,2010,20160
+Rhino(Southern white),World,2012,21316
+Rhino(Southern white),World,2015,20053
+Rhino(Southern white),World,2017,18064
+Rhino(Southern white),Zambia,1895,0
+Rhino(Southern white),Zambia,1929,0
+Rhino(Southern white),Zambia,1948,0
+Rhino(Southern white),Zambia,1968,0
+Rhino(Southern white),Zambia,1984,10
+Rhino(Southern white),Zambia,1987,6
+Rhino(Southern white),Zambia,1991,0
+Rhino(Southern white),Zambia,1993,6
+Rhino(Southern white),Zambia,1995,5
+Rhino(Southern white),Zambia,1997,6
+Rhino(Southern white),Zambia,2005,2
+Rhino(Southern white),Zambia,2010,7
+Rhino(Southern white),Zambia,2017,14
+Rhino(Southern white),Zimbabwe,1895,0
+Rhino(Southern white),Zimbabwe,1929,0
+Rhino(Southern white),Zimbabwe,1948,0
+Rhino(Southern white),Zimbabwe,1968,0
+Rhino(Southern white),Zimbabwe,1984,200
+Rhino(Southern white),Zimbabwe,1987,208
+Rhino(Southern white),Zimbabwe,1991,250
+Rhino(Southern white),Zimbabwe,1992,249
+Rhino(Southern white),Zimbabwe,1993,134
+Rhino(Southern white),Zimbabwe,1995,138
+Rhino(Southern white),Zimbabwe,1997,167
+Rhino(Southern white),Zimbabwe,2005,308
+Rhino(Southern white),Zimbabwe,2010,290
+Rhino(Southern white),Zimbabwe,2017,367
+Rhino(Northern white),Democratic Republic of Congo,1960,1150
+Rhino(Northern white),Democratic Republic of Congo,1971,250
+Rhino(Northern white),Democratic Republic of Congo,1976,490
+Rhino(Northern white),Democratic Republic of Congo,1981,50
+Rhino(Northern white),Democratic Republic of Congo,1983,20
+Rhino(Northern white),Democratic Republic of Congo,1991,30
+Rhino(Northern white),Democratic Republic of Congo,1995,31
+Rhino(Northern white),Democratic Republic of Congo,1998,25
+Rhino(Northern white),Democratic Republic of Congo,2005,4
+Rhino(Northern white),Kenya,2010,4
+Rhino(Northern white),Kenya,2017,3
+Rhino(Northern white),Kenya,2018,2
+Rhino(Northern white),Sudan,1960,1000
+Rhino(Northern white),Sudan,1971,400
+Rhino(Northern white),Sudan,1981,300
+Rhino(Northern white),Sudan,1983,50
+Rhino(Northern white),Sudan,1984,0
+Rhino(Northern white),Sudan,1991,0
+Rhino(Northern white),Sudan,1995,0
+Rhino(Northern white),Sudan,1998,0
+Rhino(Northern white),Uganda,1960,80
+Rhino(Northern white),Uganda,1971,2
+Rhino(Northern white),Uganda,1976,2
+Rhino(Northern white),Uganda,1981,2
+Rhino(Northern white),Uganda,1983,2
+Rhino(Northern white),Uganda,1984,0
+Rhino(Northern white),Uganda,1991,0
+Rhino(Northern white),Uganda,1995,0
+Rhino(Northern white),Uganda,1998,0
+Rhino(Northern white),World,1960,2230
+Rhino(Northern white),World,1971,650
+Rhino(Northern white),World,1976,500
+Rhino(Northern white),World,1981,350
+Rhino(Northern white),World,1983,70
+Rhino(Northern white),World,1984,15
+Rhino(Northern white),World,1991,30
+Rhino(Northern white),World,1995,31
+Rhino(Northern white),World,2005,4
+Rhino(Northern white),World,2010,4
+Rhino(Northern white),World,2012,4
+Rhino(Northern white),World,2015,3
+Rhino(Northern white),World,2017,3
+Rhino(Northern white),World,2018,2
+Jaguar,World,1960,300000
+Jaguar,World,1965,210000
+Jaguar,World,1970,120000
+Jaguar,World,1975,90000
+Jaguar,World,1980,60000
+Jaguar,World,1985,23000
+Jaguar,World,1990,22000
+Jaguar,World,1995,20500
+Jaguar,World,2000,20000
+Jaguar,World,2005,19500
+Jaguar,World,2010,18000
+Jaguar,World,2015,16000
+Jaguar,World,2020,15000
