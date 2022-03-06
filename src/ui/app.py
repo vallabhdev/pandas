@@ -1,5 +1,5 @@
 import pandas as pd
-from flask import Flask, render_template, redirect
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -22,9 +22,14 @@ def remediation():
 
 @app.route("/")
 def home():
+    return render_template("index.html")
+
+
+@app.route("/info")
+def info():
     title = "Details of Mammals under threat..."
     df = basic_details()
-    return render_template("index.html", title=title, tables=[df.to_html(classes='data', header="true")],
+    return render_template("base.html", title=title, tables=[df.to_html(classes='data', header="true")],
                            titles=df.columns.values)
 
 
@@ -32,7 +37,7 @@ def home():
 def factors():
     title = "Factors affecting of existence of Mammals..."
     df = affecting_factors()
-    return render_template("index.html", title=title, tables=[df.to_html(classes='data', header="true")],
+    return render_template("base.html", title=title, tables=[df.to_html(classes='data', header="true")],
                            titles=df.columns.values, )
 
 
@@ -40,7 +45,7 @@ def factors():
 def status():
     title = "Endangered Status of Mammals..."
     df = endangered_status()
-    return render_template("index.html", title=title, tables=[df.to_html(classes='data', header="true")],
+    return render_template("base.html", title=title, tables=[df.to_html(classes='data', header="true")],
                            titles=df.columns.values)
 
 
@@ -48,5 +53,9 @@ def status():
 def remediation_steps():
     title = "Remediation steps taken to protect these mammals..."
     df = remediation()
-    return render_template("index.html", title=title, tables=[df.to_html(classes='data', header='true')],
+    return render_template("base.html", title=title, tables=[df.to_html(classes='data', header='true')],
                            titles=df.columns.values)
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
