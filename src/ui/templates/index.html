@@ -122,7 +122,8 @@
                 <div class="grid grid-pad">
                     <div class="content" >
                         <h2>Our Team</h2>
-                        <div class="col-1-4" >
+                        {% for name, position in users.items() %}
+                        <div class="col-1-6" >
                             <div class="content staff-content">
                                 <div class="recent-work staff-img">
                                     <div class="img-wrap staff-img">
@@ -135,51 +136,13 @@
                                         </div>
                                     </div>
                                     <div class="work-info staff-info">
-                                        <h5>user 1</h5>
-                                        <span>lead</span>
+                                        <h5>{{ name }}</h5>
+                                        <span>{{ position }}</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-1-4" >
-                            <div class="content staff-content">
-                                <div class="recent-work staff-img">
-                                    <div class="img-wrap staff-img">
-                                        <img src="../static/images/team/user.jpeg" alt="">
-                                    </div>
-                                    <div class="work-info staff-info">
-                                        <h5>user 2</h5>
-                                        <span>manager</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-1-4" >
-                            <div class="content staff-content">
-                                <div class="recent-work staff-img">
-                                    <div class="img-wrap staff-img">
-                                        <img src="../static/images/team/user.jpeg" alt="">
-                                    </div>
-                                    <div class="work-info staff-info">
-                                        <h5>user 3</h5>
-                                        <span>developer</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-1-4" >
-                            <div class="content staff-content">
-                                <div class="recent-work staff-img">
-                                    <div class="img-wrap staff-img">
-                                        <img src="../static/images/team/user.jpeg" alt="">
-                                    </div>
-                                    <div class="work-info staff-info">
-                                        <h5>user 4</h5>
-                                        <span>Developer</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>

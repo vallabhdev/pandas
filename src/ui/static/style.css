@@ -289,8 +289,9 @@ blockquote p {
 .logo {
   display: block;
   float: left;
-  font-size: 24px;
-  Color: White;
+  font-size: 28px;
+  Color: #adacb3;
+  font-weight: bold;
   background-size: 104px 46px;
 }
 
@@ -1419,8 +1420,8 @@ footer p, footer a {
 .staff-img {
   position: relative;
   display: table;
-  margin: 0 auto;
-  background: #fff;
+  margin: 5px auto;
+  background: #cfcaca;
 }
 
 .staff-img {
