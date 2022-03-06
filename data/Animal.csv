@@ -1,9 +1,14 @@
 Animal_Name,Class,Population,Weight,Length,Height,Habitats,Status,Country,Places
-Elephant(Asian),Mammal,<50000,11000 pounds,21 feet,6.5-11.5 feet,Forests,Endangered,"India,Sri lanka, Bornean, Sumatran","Eastern Himalayas, Greater Mekong"
-Panda,Mammal,"1,864",220-330 pounds,,>4 feet,"Mountains, Forest Habitat",Vulnerable,China,Yangtze
-Artic Fox,Mammal,Several hundred thousand,3 to 20 pounds,18 to 27 inches,11 inches,Polar Regions,Least Concern,,
-Chimpanzee,Mammal,"172,700 to 299,700",,,,Forest Habitat,Endangered,,Congo Basin
-Jaguars,Mammal,,,<6 feet,,"Forest Habitat, Grasslands",Near Threatened,,"Amazon, Pantanal"
-Lion,Mammal,"23,000",,,,,Vulnerable,,
-Panther,Mammal,,,,,,,,
-Rhino,Mammal,"27,000",,4-10 feet,,"Tropical and subtropical grasslands, savannahs and shrublands, tropical moist forests, deserts and shrublands",,,"Borneo and Sumatra, Namibia, Eastern Himalayas, Coastal East Africa"
+Elephant(Asian),Mammal,50000,5.5 tons,21 feet,6.5-11.5 feet,Forests,Endangered,"India,Sri lanka, Borneo, Sumatra","Eastern Himalayas, Greater Mekong"
+Elephant(African),Mammal,415000,6 tons,19-24 feet,11 feet,Forests,Endangered,"Botswana, Tanzania, Zimbabwe, Kenya, Zambia, South Africa","Congo Basin, Coastal East Africa"
+Panda,Mammal,"1,864",220-330 pounds,4-6 feet,4 feet,"Mountains, Forest Habitat",Vulnerable,China,Yangtze
+Arctic Fox,Mammal,6400,3 to 20 pounds,18 to 27 inches,11 inches,Polar Regions,Least Concern,"Alaska, Canada, Greenland, Russia, Norway, Scandinavia, Iceland",Arctic tundra
+Chimpanzee,Mammal,300000,70–130 pounds,63 – 94 cm,3–5.5 feet,Forest Habitat,Endangered,"Angola, Burundi, Cameroon, Central African Republic, Rep. of Congo, Dem. Rep. of Congo, Côte d'Ivoire, Equatorial Guinea, Gabon, Ghana, Guinea, Guinea-Bissau, Liberia, Mali, Nigeria, Rwanda, Senegal, Sierra Leone, Sudan, Uganda",Congo Basin
+Jaguars,Mammal,15000,56 – 96 kg,6 feet,63 – 76 cm,"Forest Habitat, Grasslands",Near Threatened,Brazil,"Amazon, Pantanal"
+Lion,Mammal,"22,500",130-190 kg,1.8-2.1 m,4 feet,"open plains,thick brush,dry thorn forest",Vulnerable,India,"Gir Forest,Sahara Desert"
+Panther,Mammal,,60 to 250 pounds,6-7 feet,63 – 76 cm,Forests,Endangered,"Southwestern China, Burma, Nepal, Southern India, Indonesia, the southern part of Malaysia","hot, dense tropical rainforests"
+Rhino(Black),Mammal,"5,500","1,760 -3,080 pounds",2.8 – 3.8 m,5.2 feet,"Deserts, Grasslands",Critically Endangered,"South Africa, Namibia, Zimbabwe, Kenya","Namibia, Coastal East Africa"
+Rhino(White),Mammal,"18,000","3,080-7,920 pounds",3.7 – 4 m,5-6 feet,Grasslands,Near Threatened,"South Africa, Namibia, Zimbabwe, Kenya","Namibia, Coastal East Africa"
+Rhino(Greater One-Horned Rhino),Mammal,"3,700","4,000-6,000 pounds",10- 12.5 feet,5.75 - 6.5 feet,"Forest Habitat, Grasslands, Deserts",Vulnerable,"Nepal, Bhutan, Pakistan",Eastern Himalayas
+Rhino(Javan),Mammal,60,"1,984 - 5,071 pounds",10–10.5 feet,4.6–5.8 feet,Forest Habitat,Critically Endangered,"Java, Indonesia",Ujung Kulon National Park
+Rhino(Sumatran),Mammal,80,"1,320 -2,090 pounds",6.5-13 feet,3.3-5 feet,Forest Habitat,Critically Endangered,"Sumatra,Borneo",Borneo and Sumatra
