@@ -1,9 +1,11 @@
 from flask import Flask, render_template
 
 from animal_info import *
+from save_file import save_blueprint
 from user_info import *
 
 app = Flask(__name__)
+app.register_blueprint(save_blueprint)
 
 
 @app.route("/")
