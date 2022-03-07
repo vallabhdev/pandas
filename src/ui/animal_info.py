@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 def basic_details():
     return pd.read_csv('../../data/Animal.csv')
 
@@ -14,4 +15,3 @@ def endangered_status():
 
 def remediation():
     return pd.read_csv('../../data/Remediation_measures.csv').drop(columns=['Country', 'Effect_of_Measures'])
-
