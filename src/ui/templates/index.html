@@ -66,8 +66,8 @@
                     <h2>Search an Animal</h2>
                     <div class="input-field">
                         <form enctype = "multipart/form-data" action = "/upload" method = "POST">
-                            <input type="file" name="file" >
-                            <input type="submit" value="Search now" class="width:92px;height:32px;">
+                            <input onchange="check_file()" id="file_id" type="file" name="file" accept="image/*" >
+                            <p><input type="submit" id="submit_btn" value="Upload to Search" disabled></p>
                         </form>
                     </div>
                 </section>
@@ -167,6 +167,7 @@
             </footer>
             <!-- End Footer -->
             <!-- JS -->
+            <script src="../static/js/filecheck.js"></script>
             <script src="../static/js/jquery.js"></script>
             <script src="../static/js/main.js"></script>
             <script src="../static/js/mixitup.js"></script>
