@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<h2 align="center">Welcome to the Pandas' App.!</h2>
+<body>
+<h3> {{title}}</h3>
+<div>
+    {% for table in tables %}
+    {{ table|safe }}
+    {% endfor %}
+</div>
+</body>
+</html>
