@@ -2,7 +2,6 @@ import json
 import csv
 import requests
 
-
 #giving url and query that what to find
 url = "https://animals-endangered-environmentalism.p.rapidapi.com/taxonomy/class"
 querystring = {"q":"mammalia"}
