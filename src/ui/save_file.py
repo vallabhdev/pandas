@@ -1,48 +1,50 @@
 import os
-from flask import Flask, render_template, request, redirect, url_for, send_from_directory, Blueprint
-from werkzeug.utils import secure_filename
-import numpy as np
-import os
-import six.moves.urllib as urllib
 import sys
-import tensorflow as tf
 from collections import defaultdict
 from io import StringIO
+
+import numpy as np
+import six.moves.urllib as urllib
+import tensorflow as tf
 from PIL import Image
+from flask import Flask, render_template, request, redirect, url_for, send_from_directory, Blueprint
+from werkzeug.utils import secure_filename
+
 sys.path.append("..")
 from utils import label_map_util
 from utils import visualization_utils as vis_util
-MODEL_NAME = 'model'
-PATH_TO_CKPT = MODEL_NAME + '/frozen_inference_graph.pb'
-PATH_TO_LABELS = os.path.join('data', 'label.pbtxt')
-NUM_CLASSES = 8
 
+MODEL_NAME = '../imagedetection/model'
+PATH_TO_CKPT = MODEL_NAME + '/frozen_inference_graph.pb'
+PATH_TO_LABELS = os.path.join('../imagedetection/data', 'label.pbtxt')
+NUM_CLASSES = 8
 
 save_blueprint = Blueprint("save_blueprint", __name__)
 
-
 detection_graph = tf.Graph()
 with detection_graph.as_default():
-  od_graph_def = tf.GraphDef()
-  with tf.gfile.GFile(PATH_TO_CKPT, 'rb') as fid:
-    serialized_graph = fid.read()
-    od_graph_def.ParseFromString(serialized_graph)
-    tf.import_graph_def(od_graph_def, name='')
+    od_graph_def = tf.GraphDef()
+    with tf.gfile.GFile(PATH_TO_CKPT, 'rb') as fid:
+        serialized_graph = fid.read()
+        od_graph_def.ParseFromString(serialized_graph)
+        tf.import_graph_def(od_graph_def, name='')
 label_map = label_map_util.load_labelmap(PATH_TO_LABELS)
-categories = label_map_util.convert_label_map_to_categories(label_map, max_num_classes=NUM_CLASSES, use_display_name=True)
+categories = label_map_util.convert_label_map_to_categories(label_map, max_num_classes=NUM_CLASSES,
+                                                            use_display_name=True)
 category_index = label_map_util.create_category_index(categories)
 
 
 def load_image_into_numpy_array(image):
-  (im_width, im_height) = image.size
-  return np.array(image.getdata()).reshape(
-      (im_height, im_width, 3)).astype(np.uint8)
+    (im_width, im_height) = image.size
+    return np.array(image.getdata()).reshape(
+        (im_height, im_width, 3)).astype(np.uint8)
 
 
 app = Flask(__name__)
 
-app.config['UPLOAD_FOLDER'] = 'uploads/'
+app.config['UPLOAD_FOLDER'] = '../imagedetection/uploads/'
 app.config['ALLOWED_EXTENSIONS'] = set(['png', 'jpg', 'jpeg'])
+
 
 def allowed_file(filename):
     return '.' in filename and \
@@ -64,10 +66,10 @@ def upload():
                                 filename=filename))
 
 
-@app.route('/uploads/<filename>')
+@save_blueprint.route('/uploads/<filename>')
 def uploaded_file(filename):
     PATH_TO_TEST_IMAGES_DIR = app.config['UPLOAD_FOLDER']
-    TEST_IMAGE_PATHS = [ os.path.join(PATH_TO_TEST_IMAGES_DIR,filename.format(i)) for i in range(1, 2) ]
+    TEST_IMAGE_PATHS = [os.path.join(PATH_TO_TEST_IMAGES_DIR, filename.format(i)) for i in range(1, 2)]
     IMAGE_SIZE = (12, 8)
 
     with detection_graph.as_default():
@@ -93,7 +95,7 @@ def uploaded_file(filename):
                     use_normalized_coordinates=True,
                     line_thickness=8)
                 im = Image.fromarray(image_np)
-                im.save('uploads/'+filename)
+                im.save('../imagedetection/uploads/' + filename)
 
     return send_from_directory(app.config['UPLOAD_FOLDER'],
                                filename)
