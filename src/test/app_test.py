@@ -4,7 +4,6 @@ from src.ui.app import *
 
 
 class AppTest(unittest.TestCase):
-
     # testing if index is calling or not
     def test_index(self):
         tester = app.test_client(self)
