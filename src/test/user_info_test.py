@@ -14,7 +14,7 @@ class UserInfoTest(unittest.TestCase):
                            'Krutika': ['Data Engineer'],
                            'Prakshi': ['Data Engineer'], 'Prateek': ['UI Developer']}
 
-    # testing length o dictionary
+    # testing length of dictionary
     def test_len_of_dictionary(self):
         self.assertAlmostEqual(len(actual_dictionary), 12)
 
