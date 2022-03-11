@@ -1,6 +1,6 @@
 import unittest
 
-from src.ui.user_info import *
+from src.ui.user_info import user_details
 
 
 class UserInfoTest(unittest.TestCase):
@@ -27,6 +27,7 @@ class UserInfoTest(unittest.TestCase):
     def test_none_values(self):
         self.assertIsNotNone(actual_dictionary.values())
         self.assertAlmostEqual(len(actual_dictionary.values()), 12)
+
 
     # testing dictionary data
     def test_dictionary_data(self):
