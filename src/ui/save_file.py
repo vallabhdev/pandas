@@ -51,18 +51,13 @@ def allowed_file(filename):
            filename.rsplit('.', 1)[1] in app.config['ALLOWED_EXTENSIONS']
 
 
-@save_blueprint.route('/')
-def index():
-    return render_template('index.html')
-
-
 @save_blueprint.route('/upload', methods=['POST'])
 def upload():
     file = request.files['file']
     if file and allowed_file(file.filename):
         filename = secure_filename(file.filename)
         file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-        return redirect(url_for('uploaded_file',
+        return redirect(url_for('save_blueprint.uploaded_file',
                                 filename=filename))
 
 
