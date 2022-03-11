@@ -4,7 +4,7 @@ from src.ui.user_info import user_details
 
 
 class UserInfoTest(unittest.TestCase):
-    # diclaring variables (actual and expected from test)
+    # declaring variables (actual and expected from test)
     global actual_dictionary, expected_dictionary
     actual_dictionary = user_details()
     expected_dictionary = {'Jinal': ['Leader'], 'Akhil': ['Python Developer'], 'Ankit': ['WebScrapper'],
