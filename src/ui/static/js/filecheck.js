@@ -25,7 +25,7 @@ function check_file()
         upload_btn.value = ""
         submit_btn.disabled = true
     } else if(size_in_MB > 5) {
-        alert("That's a nice photo, but too big. Try one that is smaller than 1MB.");
+        alert("That's a nice photo, but too big. Try one that is smaller than 5MB.");
         upload_btn.value = ""
         submit_btn.disabled = true
     } else {
