@@ -10,6 +10,7 @@ def linear_regression_for(x, y):
     n = x.shape[0]
     m = ((sum_Xi * sum_Yi) - n * sum(x * y)) / (sum_Xi ** 2 - n * sum(x ** 2))
     b = ((sum_Xi * sum(x * y)) - (sum(x ** 2) * sum_Yi)) / ((sum_Xi ** 2) - n * sum(x ** 2))
+    print(m,b)
     return m, b
 
 
