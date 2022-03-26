@@ -4,6 +4,32 @@ from flask import render_template, Blueprint
 info_blueprint = Blueprint('info', __name__)
 
 
+def map_to_dict(basic_info, fact, rem_steps):
+    base = list(basic_info.values())[0]
+    fact = list(fact.values())[0]
+    steps = list(rem_steps.values())[0]
+    for k, v in fact.items():
+        k = k.replace("_"," ")
+        base[k] = v.lower()
+    for k, v in steps.items():
+        k = k.replace("_", " ")
+        base[k] = v.lower()
+    print(base)
+    return base
+
+
+def get_all_details_for(animal_name):
+    df = basic_details()
+    basic_info = df[df['Animal_Name'] == animal_name].T.to_dict()
+
+    af = affecting_factors()
+    factors = af[af['Animal_Name'] == animal_name].T.to_dict()
+
+    rm = remediation()
+    steps = rm[rm['Animal_Name'] == animal_name].T.to_dict()
+    return map_to_dict(basic_info, factors, steps)
+
+
 def basic_details():
     return pd.read_csv('../../data/Animal.csv')
 

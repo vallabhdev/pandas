@@ -1,19 +1,34 @@
 import pandas as pd
-from sklearn.metrics import accuracy_score
-from sklearn.model_selection import train_test_split
-from sklearn.tree import DecisionTreeClassifier
+from flask import Blueprint
 
-animal_name = 'Elephant(African)'
-df = pd.read_csv('../../data/Population_by_year.csv')
-df = df[df['Animal'] == animal_name]
-X = df['Year']
-Y = df['Population']
+predict_blueprint = Blueprint('predict', __name__)
 
-X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.15)
 
-model = DecisionTreeClassifier()
-model.fit(X_train, Y_train)
-Z = model.predict(X_test)
+def linear_regression_for(x, y):
+    sum_Xi = sum(x)
+    sum_Yi = sum(y)
+    n = x.shape[0]
+    m = ((sum_Xi * sum_Yi) - n * sum(x * y)) / (sum_Xi ** 2 - n * sum(x ** 2))
+    b = ((sum_Xi * sum(x * y)) - (sum(x ** 2) * sum_Yi)) / ((sum_Xi ** 2) - n * sum(x ** 2))
+    print(m,b)
+    return m, b
 
-score = accuracy_score(Y_test, Z)
-print(score)
+
+def filter_df_for(animal_name, df):
+    return df[df['Animal'] == animal_name]
+
+
+def load_data():
+    return pd.read_csv('../../data/Population_by_year.csv')
+
+
+@predict_blueprint.route('/predict/<name>/<year>', methods=['GET'])
+def predict_population(name, year):
+    df = load_data()
+    df = filter_df_for(name, df)
+    X = df['Year']
+    Y = df['Population']
+    m, b = linear_regression_for(X, Y)
+    yr = int(year)
+    y_hat = m * yr + b
+    return str(y_hat)
