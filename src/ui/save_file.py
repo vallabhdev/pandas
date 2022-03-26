@@ -10,6 +10,9 @@ from PIL import Image
 from flask import Flask, render_template, request, redirect, url_for, send_from_directory, Blueprint
 from werkzeug.utils import secure_filename
 
+from animal_info import *
+from user_info import *
+
 sys.path.append("..")
 from utils import label_map_util
 from utils import visualization_utils as vis_util
@@ -94,3 +97,8 @@ def uploaded_file(filename):
 
     return send_from_directory(app.config['UPLOAD_FOLDER'],
                                filename)
+
+
+def upload_wip(animal_name):
+    animal_info = get_all_details_for(animal_name)
+    return render_template("index.html", name=animal_name, users=user_details(), loaded=True, info=animal_info)
