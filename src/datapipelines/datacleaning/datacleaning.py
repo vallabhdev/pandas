@@ -4,7 +4,7 @@ import os
 raw_files = os.listdir('..\..\..\data\\')
 
 for file in raw_files:
-    df = pd.read_csv('data\\'+file,encoding='unicode_escape')
+    df = pd.read_csv('..\..\..\data\\'+file,encoding='unicode_escape')
     columns=[]
     for i in df:
         columns.append(i)
@@ -26,5 +26,5 @@ for file in raw_files:
                 cleaning_column[i]=int(cleaning_column[i])
             del df['Population']
             df.insert(index, "Population", cleaning_column , True)
-            df.to_csv('data\\'+file)
+            df.to_csv('..\..\..\data\\'+file)
 
