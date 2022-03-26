@@ -4,7 +4,7 @@ import os
 raw_files = os.listdir('..\..\..\data\\')
 
 for file in raw_files:
-    df = pd.read_csv('..\..\..\data\\'+file,encoding='unicode_escape')
+    df = pd.read_csv('..\..\..\data\\'+file)
     columns=[]
     for i in df:
         columns.append(i)
