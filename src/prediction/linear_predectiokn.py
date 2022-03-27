@@ -5,7 +5,7 @@ from sklearn.linear_model import LinearRegression
 
 data = pd.read_csv("/Users/sushithks/IdeaProjects/pandas/data/Population_by_year.csv")
 
-animal_data = data.loc[data['Animal'] == 'Rhino(Sumatran)'] # has to be user input
+animal_data = data.loc[data['Animal'] == 'Rhino(Sumatran)']  # has to be user input
 animal_data = animal_data.loc[data['Country'] == 'World']  # has to be user input
 animal_data.sort_values("Year")
 # print(animal_data)
