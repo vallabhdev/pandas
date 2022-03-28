@@ -77,17 +77,17 @@
             <div class="wrap grey recent-wrap">
                 {% if loaded %}
                 <h4> You searched for {{ name }}</h4>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th><b>Taxonomy details</b></th>
+                            <th><b>Detected Animal</b></th>
+                        </tr>
+                    </thead>
+                </table>
                 <div class="row">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th><b>Taxonomy details</b></th>
-                                <th><b>Detected Animal</b></th>
-                            </tr>
-                        </thead>
-                    </table>
                     <div class="column">
-                        <table class="table-dark table-striped">
+                        <table class="table">
                             <tbody>
                             {% for i in info.keys() %}
                             <tr>
