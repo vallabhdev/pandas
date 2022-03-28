@@ -76,6 +76,9 @@
             </div>
             <div class="wrap grey recent-wrap">
                 {% if loaded %}
+                <div>
+                    <img width="55%" height="55%" src="{{ url_for('static', filename=filename) }}">
+                </div>
                 <h4> You searched for {{ name }}</h4>
                 <div>
                     <table class="table">

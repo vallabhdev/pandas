@@ -21,6 +21,7 @@ MODEL_NAME = '../imagedetection/model'
 PATH_TO_CKPT = MODEL_NAME + '/frozen_inference_graph.pb'
 PATH_TO_LABELS = os.path.join('../imagedetection/data', 'label.pbtxt')
 NUM_CLASSES = 8
+animal_name = ''
 
 save_blueprint = Blueprint("save_blueprint", __name__)
 
@@ -94,7 +95,9 @@ def uploaded_file(filename):
                     line_thickness=8)
                 im = Image.fromarray(image_np)
                 im.save('../imagedetection/uploads/' + filename)
-
+            global animal_name
+            mylabel = ([category_index.get(value) for index, value in enumerate(classes[0]) if scores[0, index] > 0.5])
+            animal_name = getMappedName(mylabel[0].get('name'))
     return send_from_directory(app.config['UPLOAD_FOLDER'],
                                filename)
 

@@ -4,12 +4,30 @@ from flask import render_template, Blueprint
 info_blueprint = Blueprint('info', __name__)
 
 
+def getMappedName(name):
+    mappedName = {'africanelephant': 'Elephant(Arfican)',
+                  'asianelephant': 'Elephant(Asian)',
+                  'panda': 'Panda',
+                  'arcticfox': 'Arctic Fox',
+                  'chimpanzee': 'Chimpanzee',
+                  'jaguars': 'Jaguars',
+                  'lion': 'Lion',
+                  'panther': 'Panther',
+                  'blackrhino': 'Rhino(Black)',
+                  'whiterhino': 'Rhino(White)',
+                  'rhino': 'Rhino(Greater One-Horned Rhino)',
+                  'javanrhino': 'Rhino(Javan)',
+                  'sumatranrhino': 'Rhino(Sumatran)'
+                  }
+    return mappedName.get(name)
+
+
 def map_to_dict(basic_info, fact, rem_steps):
     base = list(basic_info.values())[0]
     fact = list(fact.values())[0]
     steps = list(rem_steps.values())[0]
     for k, v in fact.items():
-        k = k.replace("_"," ")
+        k = k.replace("_", " ")
         base[k] = v.lower()
     for k, v in steps.items():
         k = k.replace("_", " ")
