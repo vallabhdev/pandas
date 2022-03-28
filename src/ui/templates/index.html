@@ -76,29 +76,37 @@
             </div>
             <div class="wrap grey recent-wrap">
                 {% if loaded %}
-                <div>
-                    <img width="55%" height="55%" src="{{ url_for('static', filename=filename) }}">
-                </div>
                 <h4> You searched for {{ name }}</h4>
-                <div>
+                <div class="row">
                     <table class="table">
                         <thead>
                             <tr>
-                                <th>Taxonomy details</th>
-                                <th>Detected Animal</th>
+                                <th><b>Taxonomy details</b></th>
+                                <th><b>Detected Animal</b></th>
                             </tr>
                         </thead>
                     </table>
-                    <table class="table-dark table-striped" width="50%">
-                        <tbody>
-                        {% for i in info.keys() %}
-                        <tr>
-                            <th scope="col">{{i}}</th>
-                            <th scope="col">{{info.get(i)}}</th>
-                        </tr>
-                        {% endfor %}
-                        </tbody>
-                    </table>
+                    <div class="column">
+                        <table class="table-dark table-striped">
+                            <tbody>
+                            {% for i in info.keys() %}
+                            <tr>
+                                <th scope="col">{{i}}</th>
+                                <th scope="col">{{info.get(i)}}</th>
+                            </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="column">
+                        <table class="table">
+                            <tbody>
+                            <tr>
+                                <td><img width="220%" height="140%" src="../static/images/work/lion1.jpeg"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
                 <div class="wrap">
                     <h6>Check out our <a target="_blank" href="https://datastudio.google.com/embed/reporting/e7e700c4-40d2-475b-8639-94f2f36bf762/page/gqsnC">dashboard</a>  for the consolidate view.</h6>
@@ -117,11 +125,12 @@
                             <li class="filter" data-filter=".panda">PANDA</li>
                             <li class="filter" data-filter=".tiger">TIGER</li>
                             <li class="filter" data-filter=".lion">LION</li>
+                            <li class="filter" data-filter=".elephant">Elephant</li>
                         </ul>
                     </div>
                     <!-- End of Filter section -->
                     <div class="portfolio-items" >
-                        <div class="col-1-3 mix panda">
+                        <div class="col-1-4 mix panda">
                             <div class="panda">
                                 <div class="gallery">
                                     <img src="../static/images/work/panda1.jpeg" >
@@ -130,19 +139,30 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-1-3 mix lion">
+                        <div class="col-1-4 mix lion">
                             <div class="lion">
                                 <div class="gallery">
                                     <img src="../static/images/work/lion1.jpeg" >
                                     <img src="../static/images/work/lion2.jpg" >
+                                    <img src="../static/images/work/lion3.jpg" >
                                 </div>
                             </div>
                         </div>
-                        <div class="col-1-3 mix tiger">
+                        <div class="col-1-4 mix tiger">
                             <div class="tiger">
                                 <div class="gallery">
                                     <img src="../static/images/work/tiger1.jpeg" >
                                     <img src="../static/images/work/tiger2.jpg" >
+                                    <img src="../static/images/work/tiger3.jpg" >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1-4 mix elephant">
+                            <div class="elephant">
+                                <div class="gallery">
+                                    <img src="../static/images/work/elephant1.jpg" >
+                                    <img src="../static/images/work/elephant2.jpg" >
+                                    <img src="../static/images/work/elephant3.jpg" >
                                 </div>
                             </div>
                         </div>
