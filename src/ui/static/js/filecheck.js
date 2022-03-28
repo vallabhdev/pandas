@@ -5,7 +5,7 @@ function findFileExtension(filename) {
 
 function isImage(filename) {
   var ext = findFileExtension(filename);
-  const supported_ext = ["jpg", "jpeg", "bmp", "png"]
+  const supported_ext = ["jpg", "jpeg", "png"]
   return supported_ext.indexOf(ext) !== -1
 }
 
@@ -21,7 +21,7 @@ function check_file()
     var submit_btn = document.getElementById("submit_btn")
 
     if(!isImage(file.name)) {
-        alert("Images only please. Supported formats: jpg, jpeg, png, bmp");
+        alert("Images only please. Supported formats: jpg, jpeg, png");
         upload_btn.value = ""
         submit_btn.disabled = true
     } else if(size_in_MB > 5) {
