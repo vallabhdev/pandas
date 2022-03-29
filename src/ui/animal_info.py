@@ -22,18 +22,21 @@ def getMappedName(name):
     return mappedName.get(name)
 
 
+def map_from(baseObj, obj):
+    for k, v in obj.items():
+        baseObj[k] = v if k == 'Animal_Name' else v.lower()
+
+
 def map_to_dict(basic_info, fact, rem_steps):
     base = list(basic_info.values())[0]
     fact = list(fact.values())[0]
     steps = list(rem_steps.values())[0]
-    for k, v in fact.items():
-        k = k.replace("_", " ")
-        base[k] = v.lower()
-    for k, v in steps.items():
-        k = k.replace("_", " ")
-        base[k] = v.lower()
-    print(base)
-    return base
+    map_from(base, fact)
+    map_from(base, steps)
+    animal_info = {}
+    for k, v in base.items():
+        animal_info[k.replace("_", " ")] = v
+    return animal_info
 
 
 def get_all_details_for(animal_name):
