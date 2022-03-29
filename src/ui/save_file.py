@@ -98,10 +98,10 @@ def uploaded_file(filename):
             global animal_name
             mylabel = ([category_index.get(value) for index, value in enumerate(classes[0]) if scores[0, index] > 0.5])
             animal_name = getMappedName(mylabel[0].get('name'))
-    return send_from_directory(app.config['UPLOAD_FOLDER'],
-                               filename)
+    return redirect(url_for('save_blueprint.fetch_details_for',animal_name=animal_name))
 
 
-def upload_wip(animal_name):
+@save_blueprint.route('/<animal_name>', methods=['POST'])
+def fetch_details_for(animal_name):
     animal_info = get_all_details_for(animal_name)
     return render_template("index.html", name=animal_name, users=user_details(), loaded=True, info=animal_info)
