@@ -65,7 +65,7 @@
             <!-- Search Animal Section-->
             <div class="wrap grey recent-wrap" id="search">
                 <section class="grid grid-pad">
-                    <h2>Search an Animal</h2>
+                    <h2>Let's search an Animal</h2>
                     <div class="input-field">
                         <form enctype = "multipart/form-data" action = "/upload" method = "POST">
                             <input onchange="check_file()" id="file_id" type="file" name="file" accept="image/*" >
@@ -77,17 +77,17 @@
             <div class="wrap grey recent-wrap">
                 {% if loaded %}
                 <h4> You searched for {{ name }}</h4>
-                <table class="table">
+                <table class="table table-dark">
                     <thead>
                         <tr>
-                            <th><b>Taxonomy details</b></th>
-                            <th><b>Detected Animal</b></th>
+                            <th><h5>Taxonomy details</h5></th>
+                            <th><h5>Detected Animal</h5></th>
                         </tr>
                     </thead>
                 </table>
                 <div class="row">
                     <div class="column">
-                        <table class="table">
+                        <table class="table table-dark">
                             <tbody>
                             {% for i in info.keys() %}
                             <tr>
@@ -99,17 +99,17 @@
                         </table>
                     </div>
                     <div class="column">
-                        <table class="table">
+                        <table class="table table-dark">
                             <tbody>
                             <tr>
-                                <td><img width="220%" height="140%" src="../static/images/work/lion1.jpeg"></td>
+                                <td><img width="700x" height="565px" src="../static/images/work/lion2.jpg"></td>
                             </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
                 <div class="wrap">
-                    <h6>Check out our <a target="_blank" href="https://datastudio.google.com/embed/reporting/e7e700c4-40d2-475b-8639-94f2f36bf762/page/gqsnC">dashboard</a>  for the consolidate view.</h6>
+                    <h5>Check out our <a target="_blank" href="https://datastudio.google.com/embed/reporting/e7e700c4-40d2-475b-8639-94f2f36bf762/page/gqsnC">dashboard</a>  for the consolidate view.</h5>
                 </div>
                 {% endif %}
             </div>
@@ -122,10 +122,10 @@
                     <div class="col-1-1 mix">
                         <ul class="filters" >
                             <li class="filter active" data-filter="all">All</li>
-                            <li class="filter" data-filter=".panda">PANDA</li>
-                            <li class="filter" data-filter=".tiger">TIGER</li>
-                            <li class="filter" data-filter=".lion">LION</li>
                             <li class="filter" data-filter=".elephant">Elephant</li>
+                            <li class="filter" data-filter=".panda">Panda</li>
+                            <li class="filter" data-filter=".tiger">Tiger</li>
+                            <li class="filter" data-filter=".lion">Lion</li>
                         </ul>
                     </div>
                     <!-- End of Filter section -->

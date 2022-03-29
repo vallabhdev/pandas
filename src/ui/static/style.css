@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
 .wrap {
   width: 100%;
   padding: 3.5em 0;
