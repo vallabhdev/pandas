@@ -1,4 +1,4 @@
-Animal,Country,Year,Population
+﻿Animal,Country,Year,Population
 Elephant(African),Africa,1500,26000000
 Elephant(African),Africa,1913,10000000
 Elephant(African),Africa,1979,1300000
@@ -676,3 +676,8 @@ Jaguar,World,2005,19500
 Jaguar,World,2010,18000
 Jaguar,World,2015,16000
 Jaguar,World,2020,15000
+cheetah,World,1900,100000
+cheetah,World,1980,25000
+cheetah,World,2008,17050
+cheetah,World,2013,10000
+cheetah,World,2022,7100

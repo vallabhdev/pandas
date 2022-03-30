@@ -1,4 +1,4 @@
-Animal_Name,Population,Status,Country,Continent,Year,Extinction_Rate
+﻿Animal_Name,Population,Status,Country,Continent,Year,Extinction_Rate
 Elephant(Asian),50000,Endangered,"India,Sri lanka, Borneo, Sumatra",Africa,,
 Elephant(African),415000,Endangered,"Botswana, Tanzania, Zimbabwe, Kenya, Zambia, South Africa",Asia,,
 Panda,"1,864",Vulnerable,China,Asia,,
@@ -12,3 +12,4 @@ Rhino(White),"18,000",Near Threatened,"South Africa, Namibia, Zimbabwe, Kenya",A
 Rhino(Greater One-Horned Rhino),"3,700",Vulnerable,"Nepal, Bhutan, Pakistan",Asia,,
 Rhino(Javan),60,Critically Endangered,"Java, Indonesia",Asia,,
 Rhino(Sumatran),80,Critically Endangered,"Sumatra,Borneo",Asia,,
+Cheetah,"7,100",Vulnerable,"Africa, Southwest Asia, India","Africa, Asia",,

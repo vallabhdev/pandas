@@ -1,4 +1,4 @@
-Animal_Name,Measure_Taken,Country,Effect_of_Measures
+﻿Animal_Name,Measure_Taken,Country,Effect_of_Measures
 Elephant(Asian),"REDUCING HUMAN-ELEPHANT CONFLICT, HALTING POACHING AND STOPPING TRADE, PROTECTING ELEPHANT HABITAT, SECURING HEALTHY FORESTS","India,Sri lanka, Borneo, Sumatra",
 Elephant(African),"PROTECTING AND MANAGING HABITATS,FIGHTING ILLEGAL WILDLIFE TRADE,MANAGING CONFLICT","Botswana, Tanzania, Zimbabwe, Kenya, Zambia, South Africa",
 Panda,"increasing the area of panda habitat under legal protection, creating green corridors to link isolated pandas, patrolling against poaching, illegal logging, and encroachment, building local capacities for nature reserve management, continuing research and monitoring",China,
@@ -12,3 +12,4 @@ Rhino(White),"STRENGTHENING LOCAL AND INTERNATIONAL LAW ENFORCEMENT, EFFECTIVE P
 Rhino(Greater One-Horned Rhino),"RESTORING LANDSCAPES, MONITORING AND PROTECTION, WORKING WITH LOCAL COMMUNITIES, STRENGTHENING LAW ENFORCEMENT, TACKLING ILLEGAL WILDLIFE TRADE","Nepal, Bhutan, Pakistan",
 Rhino(Javan),"ESTABLISHING A SECOND POPULATION, PROTECTING RHINOS FROM MAN-MADE THREATS, REINVIGORATING EXISTING HABITAT","Java, Indonesia",
 Rhino(Sumatran),"MONITORING RHINO DISTRIBUTION AND POPULATION SIZE, MANAGING POPULATIONS, SUPPORTING RHINO PROTECTION UNITS","Sumatra,Borneo",
+Cheetah,,"Africa, Southwest Asia, India",
