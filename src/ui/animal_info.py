@@ -5,11 +5,12 @@ info_blueprint = Blueprint('info', __name__)
 
 
 def getMappedName(name):
-    mappedName = {'africanelephant': 'Elephant(Arfican)',
+    mappedName = {'africanelephant': 'Elephant(African)',
                   'asianelephant': 'Elephant(Asian)',
                   'panda': 'Panda',
                   'arcticfox': 'Arctic Fox',
                   'chimpanzee': 'Chimpanzee',
+                  'cheetah': 'Cheetah',
                   'jaguars': 'Jaguars',
                   'lion': 'Lion',
                   'panther': 'Panther',
