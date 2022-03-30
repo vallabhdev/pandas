@@ -110,6 +110,11 @@
                             </tbody>
                         </table>
                     </div>
+                    <form action = "/predict" method = "GET">
+                        <p><input type="text" id="name" name="name"></p>
+                        <p><input type="text" id="year" name="year"></p>
+                        <input type="submit" id="predict_btn" value="Predict">
+                    </form>
                 </div>
                 {% endif %}
                 <div class="wrap" id="dashboard">
