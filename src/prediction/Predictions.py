@@ -4,11 +4,12 @@ from flask import Flask, request, render_template
 import json
 import plotly
 import plotly.express as px
+from src.ui.user_info import user_details
 
 
 predict_blueprint = Blueprint('predict', __name__)
 
-
+#made function to predict population
 def linear_regression_for(x, y):
     sum_Xi = sum(x)
     sum_Yi = sum(y)
@@ -18,18 +19,19 @@ def linear_regression_for(x, y):
     print(m,b)
     return m, b
 
-
+#filter data which come from load_data with specific animal name
 def filter_df_for(animal_name, df):
     return df[df['Animal'] == animal_name]
 
-
+#read data from csv
 def load_data():
     return pd.read_csv('../../data/Population_by_year.csv')
 
+#made rest api
 @predict_blueprint.route('/predict',methods=["GET","POST"])
 def predict_population():
     global pred_y
-    name = request.args.get("animal_name")
+    name = request.args.get("animal_name")      #take animal name from detectection model
     year = request.args.get("year")
     df = load_data()
     df = filter_df_for(name, df)
@@ -43,6 +45,4 @@ def predict_population():
         pred_y = 0
     else:
         pred_y = y_hat
-    result = pd.data
-    fig = px.line(X,Y)
-    return str(pred_y)
+    return render_template("index.html", users=user_details())
