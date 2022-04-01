@@ -14,8 +14,8 @@ from src.ui.animal_info import *
 from src.ui.user_info import *
 
 sys.path.append("..")
-from utils import label_map_util
-from utils import visualization_utils as vis_util
+from src.ui.utils import label_map_util
+from src.ui.utils import visualization_utils as vis_util
 
 MODEL_NAME = '../imagedetection/model'
 PATH_TO_CKPT = MODEL_NAME + '/frozen_inference_graph.pb'
