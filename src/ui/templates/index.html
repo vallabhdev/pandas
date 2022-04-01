@@ -110,12 +110,35 @@
                             </tbody>
                         </table>
                     </div>
+                    <div class="wrap grey recent-wrap" >
                     <form action = "/predict" method = "GET">
-                        <p><input type="text" id="name" name="name"></p>
-                        <p><input type="text" id="year" name="year"></p>
-                        <input type="submit" id="predict_btn" value="Predict">
+                        <div class="grid grid-pad" >
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                            <select name="animal_name" id="name" >
+                                                <option value="{{ name }}" selected>{{ name }}</option>
+                                                <option value="africanelephant">African Elphant</option>
+                                                <option value="lion">Lion</option>
+                                                <option value="rhino">Rhino</option>
+                                                <option value="panther">Panther</option>
+                                                <option value="panda">Panda</option>
+                                                <option value="chimpanzee">Chimpanzee</option>
+                                            </select>
+                                        </th>
+                                        <th >
+                                            <input type="text" id="year" name="year">
+                                        </th>
+                                        <th >
+                                            <input type="submit" id="predict_btn" value="Predict">
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </form>
-                </div>
+                    </div>
                 {% endif %}
                 <div class="wrap" id="dashboard">
                     <h2>Dashboard</h2>
