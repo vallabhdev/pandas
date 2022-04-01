@@ -10,8 +10,8 @@ from PIL import Image
 from flask import Flask, render_template, request, redirect, url_for, send_from_directory, Blueprint
 from werkzeug.utils import secure_filename
 
-from animal_info import *
-from user_info import *
+from src.ui.animal_info import *
+from src.ui.user_info import *
 
 sys.path.append("..")
 from utils import label_map_util
