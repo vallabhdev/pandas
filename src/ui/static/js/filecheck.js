@@ -10,7 +10,7 @@ function isImage(filename) {
 }
 
 function get_size_in_mb(file) {
-    return ((file.size/1024)/1024).toFixed(4);
+    return ((file.size/1024)/1024).toFixed(4); // size must be in binary bytes.
 }
 
 function check_file()
