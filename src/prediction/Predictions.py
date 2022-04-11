@@ -1,10 +1,7 @@
 import pandas as pd
 from flask import Blueprint
 from flask import Flask, request, render_template
-import json
-import plotly
-import plotly.express as px
-from src.ui.user_info import user_details
+from src.ui.animal_info import getMappedName
 
 
 predict_blueprint = Blueprint('predict', __name__)
@@ -28,11 +25,11 @@ def load_data():
     return pd.read_csv('../../data/Population_by_year.csv')
 
 #made rest api
-@predict_blueprint.route('/predict',methods=["GET","POST"])
+@predict_blueprint.route('/predict',methods=["GET"])
 def predict_population():
     global pred_y
     name = request.args.get("animal_name")      #take animal name from detectection model
-    year = request.args.get("year")
+    year = request.args.get("years")
     df = load_data()
     df = filter_df_for(name, df)
     X = df['Year']
@@ -45,4 +42,4 @@ def predict_population():
         pred_y = 0
     else:
         pred_y = y_hat
-    return render_template("index.html", users=user_details())
+    return str(pred_y)
