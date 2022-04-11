@@ -100,4 +100,4 @@ def uploaded_file(filename):
             animal_name = getMappedName(mylabel[0].get('name'))
     animal_info = get_all_details_for(animal_name)
     return render_template("index.html", name=animal_name, users=user_details(), loaded=True, info=animal_info,
-                           file_path='../static/uploads/' + filename)
+                           file_path='../imagedetection/uploads/' + filename)
