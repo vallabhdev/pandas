@@ -2,7 +2,6 @@ import os
 import sys
 from collections import defaultdict
 from io import StringIO
-
 import numpy as np
 import six.moves.urllib as urllib
 import tensorflow as tf
@@ -10,12 +9,12 @@ from PIL import Image
 from flask import Flask, render_template, request, redirect, url_for, send_from_directory, Blueprint
 from werkzeug.utils import secure_filename
 
-from src.ui.animal_info import *
-from src.ui.user_info import *
+from animal_info import *
+from user_info import *
 
 sys.path.append("..")
-from src.ui.utils import label_map_util
-from src.ui.utils import visualization_utils as vis_util
+from utils import label_map_util
+from utils import visualization_utils as vis_util
 
 MODEL_NAME = '../imagedetection/model'
 PATH_TO_CKPT = MODEL_NAME + '/frozen_inference_graph.pb'
@@ -94,10 +93,11 @@ def uploaded_file(filename):
                     use_normalized_coordinates=True,
                     line_thickness=8)
                 im = Image.fromarray(image_np)
-                im.save('../imagedetection/uploads/' + filename)
+                filepath = '../ui/static/uploads/' + filename
+                im.save(filepath)
+
             global animal_name
             mylabel = ([category_index.get(value) for index, value in enumerate(classes[0]) if scores[0, index] > 0.5])
             animal_name = getMappedName(mylabel[0].get('name'))
     animal_info = get_all_details_for(animal_name)
-    return render_template("index.html", name=animal_name, users=user_details(), loaded=True, info=animal_info,
-                           file_path='../imagedetection/uploads/' + filename)
+    return render_template("index.html", name=animal_name, users=user_details(), loaded=True, info=animal_info, file_path = '../static/uploads/' +filename)
