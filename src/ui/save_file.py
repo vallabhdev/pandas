@@ -1,12 +1,10 @@
 import os
 import sys
-from collections import defaultdict
-from io import StringIO
+
 import numpy as np
-import six.moves.urllib as urllib
 import tensorflow as tf
 from PIL import Image
-from flask import Flask, render_template, request, redirect, url_for, send_from_directory, Blueprint
+from flask import Flask, request, redirect, url_for
 from werkzeug.utils import secure_filename
 
 from animal_info import *
@@ -98,6 +96,9 @@ def uploaded_file(filename):
 
             global animal_name
             mylabel = ([category_index.get(value) for index, value in enumerate(classes[0]) if scores[0, index] > 0.5])
-            animal_name = getMappedName(mylabel[0].get('name'))
+            mapped_name = mylabel[0].get('name')
+            animal_name = getMappedName(mapped_name)
     animal_info = get_all_details_for(animal_name)
-    return render_template("index.html", name=animal_name, users=user_details(), loaded=True, info=animal_info, file_path = '../static/uploads/' +filename)
+    return render_template("index.html", name=animal_name, mapped_name=mapped_name,
+                           users=user_details(), loaded=True, info=animal_info,
+                           file_path='../static/uploads/' + filename)

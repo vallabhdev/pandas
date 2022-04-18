@@ -1,8 +1,8 @@
 import matplotlib.pyplot as plt
 from flask import request
-from src.ui.user_info import *
 
 from src.ui.animal_info import *
+from src.ui.user_info import *
 
 predict_blueprint = Blueprint('predict', __name__)
 
@@ -32,15 +32,16 @@ def load_data():
 @predict_blueprint.route('/predict', methods=['GET', 'POST'])
 def predict_population():
     global pred_y
-    name = getMappedName(request.args.get("animal_name"))  # take animal name from detectection model
+    animal_name = request.args.get("animal_name")
+    name = getMappedName(animal_name)  # take animal name from detectection model
     year = request.args.get("years")
     con_name = "world"
     df = load_data()
-    if df.shape[0] == 0 :
-        return render_template("index.html", name=name, users=user_details(), loaded=False,is_plotted= False)
+    if df.shape[0] == 0:
+        return render_template("index.html", name=name, users=user_details(), loaded=False, is_plotted=False)
     df = filter_df_for(name, con_name, df)
-    if df.shape[0] == 0 :
-        return render_template("index.html", name=name, users=user_details(), loaded=False,is_plotted= False)
+    if df.shape[0] == 0:
+        return render_template("index.html", name=name, users=user_details(), loaded=False, is_plotted=False)
     X = df['Year']
     Y = df['Population']
     m, b = linear_regression_for(X, Y)
@@ -55,5 +56,5 @@ def predict_population():
     plt.legend()
     plt.savefig('../ui/static/plot.png')
     animal_info = get_all_details_for(name)
-    return render_template("index.html", name=name, users=user_details(), loaded=True, info=animal_info,
-                           is_plotted=True, plot_path="static/plot.png")
+    return render_template("index.html", name=name, mapped_name=animal_name, users=user_details(), loaded=True,
+                           info=animal_info, is_plotted=True, plot_path="static/plot.png")
