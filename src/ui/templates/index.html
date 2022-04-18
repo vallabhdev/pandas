@@ -151,8 +151,9 @@
                             </div>
                         </form>
                          {% if is_plotted %}
-                             <div>
-                             <img width="60%" align="center" src={{plot_path}}>
+                        <p><label>Predicted Value : {{ predicted_value }}</label></p>
+                             <div class="wrap grey recent-wrap">
+                             <img width="50%" height="450px" align="center" src={{plot_path}}>
                             </div>
                          {% endif %}
                     </div>
