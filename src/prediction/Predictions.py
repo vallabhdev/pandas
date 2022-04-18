@@ -33,7 +33,7 @@ def load_data():
 def predict_population():
     global pred_y
     animal_name = request.args.get("animal_name")
-    name = getMappedName(animal_name)  # take animal name from detectection model
+    name = getMappedName(animal_name)  # take animal name from detection model
     year = request.args.get("years")
     con_name = "world"
     df = load_data()
