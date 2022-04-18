@@ -7,12 +7,12 @@ from PIL import Image
 from flask import Flask, request, redirect, url_for
 from werkzeug.utils import secure_filename
 
-from animal_info import *
-from user_info import *
+from src.ui.animal_info import *
+from src.ui.user_info import *
 
 sys.path.append("..")
-from utils import label_map_util
-from utils import visualization_utils as vis_util
+from src.ui.utils import label_map_util
+from src.ui.utils import visualization_utils as vis_util
 
 MODEL_NAME = '../imagedetection/model'
 PATH_TO_CKPT = MODEL_NAME + '/frozen_inference_graph.pb'
