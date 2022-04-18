@@ -15,7 +15,9 @@
         <link rel="stylesheet" href="../static/js/owl-carousel/owl.theme.css" />
         <link rel="stylesheet" href="../static/js/owl-carousel/owl.transitions.css" />
         <link rel="stylesheet" href="../static/style.css">
+        <link rel="stylesheet" href="../static/css/dropdown.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" crossorigin="anonymous">
 
         <!-- Google Fonts -->
         <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900' rel='stylesheet' type='text/css'>
@@ -110,7 +112,50 @@
                             </tbody>
                         </table>
                     </div>
-                </div>
+
+                    <div class="wrap grey recent-wrap">
+                        <div class="col-1-1"><label  style="color: #000000;font-weight: bold;font-size: 150%">Choose Below Filter For Prediction</label></div>
+                        <form action = "/predict" method = "get">
+                            <div class="col-1-4">
+                                <select class="dropbtn" name="animal_name" id="animal_name" >
+                                    <option value="{{ mapped_name }}" selected>{{ name }}</option>
+                                    <option value="africanelephant">Elephant(African)</option>
+                                    <option value="asianelephant">Elephant(Asian)</option>
+                                    <option value="lion">Lion</option>
+                                    <option value="rhino">Rhino</option>
+                                    <option value="panther">Panther</option>
+                                    <option value="panda">Panda</option>
+                                    <option value="chimpanzee">Chimpanzee</option>
+                                    <option value="arcticfox">Arctic Fox</option>
+                                </select>
+                            </div>
+                            <div class="col-1-4">
+                                <select class="dropbtn" name="con" id="con" >
+                                    <option value="world">World</option>
+                                    <option value="Africa">Africa</option>
+                                    <option value="China">China</option>
+                                    <option value="India">India</option>
+                                </select>
+                            </div>
+                            <div class="col-1-4">
+                                <select class="dropbtn" name="years" id="Pre_year" >
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                </select>
+                            </div>
+                            <div class="col-1-4">
+                                <input class="button" type="submit" id="predict_btn" value="Predict">
+                            </div>
+                        </form>
+                         {% if is_plotted %}
+                             <div>
+                             <img width="60%" align="center" src={{plot_path}}>
+                            </div>
+                         {% endif %}
+                    </div>
                 {% endif %}
                 <div class="wrap" id="dashboard">
                     <h2>Dashboard</h2>
@@ -238,5 +283,7 @@
             <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
             <script src="../static/js/jquery.counterup.min.js"></script>
             <script src="../static/js/lightcase.min.js"></script>
+            <script src="bootstrap.bundle.js"></script>
+            <script src="bootstrap.bundle.min.js"></script>
         </body>
 </html>
