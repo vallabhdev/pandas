@@ -4,9 +4,29 @@ item {
 }
 item {
   id: 2
-  name: 'cheetah'
+  name: 'lion'
 }
 item {
   id: 3
   name: 'arcticfox'
+}
+item {
+  id: 4
+  name: 'cheetah'
+}
+item {
+  id: 5
+  name: 'panda'
+}
+item {
+  id: 6
+  name: 'chimpanzee'
+}
+item {
+  id: 7
+  name: 'panther'
+}
+item {
+  id: 8
+  name: 'rhino'
 }
