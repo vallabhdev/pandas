@@ -115,10 +115,10 @@
 
                     <div class="wrap grey recent-wrap">
                         <div class="col-1-1"><label  style="color: #000000;font-weight: bold;font-size: 150%">Choose Below Filter For Prediction</label></div>
-                        <form action = "/predict" method = "GET">
+                        <form action = "/predict" method = "get">
                             <div class="col-1-4">
-                                <select class="dropbtn" name="animal_name" id="name" >
-                                    <option value="{{ name }}" selected>{{ name }}</option>
+                                <select class="dropbtn" name="animal_name" id="animal_name" >
+                                    <option value="{{ mapped_name }}" selected>{{ name }}</option>
                                     <option value="africanelephant">Elephant(African)</option>
                                     <option value="asianelephant">Elephant(Asian)</option>
                                     <option value="lion">Lion</option>
@@ -150,6 +150,11 @@
                                 <input class="button" type="submit" id="predict_btn" value="Predict">
                             </div>
                         </form>
+                         {% if is_plotted %}
+                             <div>
+                             <img width="60%" align="center" src={{plot_path}}>
+                            </div>
+                         {% endif %}
                     </div>
                 {% endif %}
                 <div class="wrap" id="dashboard">
