@@ -19,8 +19,8 @@ def linear_regression_for(x, y):
 
 
 # filter data which come from load_data with specific animal name
-def filter_df_for(animal_name, df):
-    return df[(df['Animal'] == animal_name)]
+def filter_df_for(animal_name, country_name, df):
+    return df[(df['Animal'] == animal_name) & (df['Country'] == country_name)]
 
 
 # read data from csv
@@ -35,10 +35,11 @@ def predict_population():
     animal_name = request.args.get("animal_name")
     name = getMappedName(animal_name)  # take animal name from detection model
     year = request.args.get("years")
+    con_name = "world"
     df = load_data()
     if df.shape[0] == 0:
         return render_template("index.html", name=name, users=user_details(), loaded=False, is_plotted=False)
-    df = filter_df_for(name, df)
+    df = filter_df_for(name, con_name, df)
     if df.shape[0] == 0:
         return render_template("index.html", name=name, users=user_details(), loaded=False, is_plotted=False)
     X = df['Year']
