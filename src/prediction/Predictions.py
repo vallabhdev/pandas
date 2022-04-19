@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 from flask import request
-
+import os
 from src.ui.animal_info import *
 from src.ui.user_info import *
 
@@ -31,6 +31,8 @@ def load_data():
 # made rest api
 @predict_blueprint.route('/predict', methods=['GET', 'POST'])
 def predict_population():
+    if os.path.exists("../ui/static/plot.png"):
+        os.remove("../ui/static/plot.png")
     global pred_y
     animal_name = request.args.get("animal_name")
     name = getMappedName(animal_name)  # take animal name from detection model
@@ -59,8 +61,10 @@ def predict_population():
     plt.legend()
     plt.title("Population vs Years trend for " + name)
     plt.savefig('../ui/static/plot.png')
+    plt.clf()
     animal_info = get_all_details_for(name)
     file_path = request.args.get("file_path")
+    del X, Y
     return render_template("index.html", name=name, mapped_name=animal_name, predicted_value=pred_y,
                            users=user_details(), loaded=True, info=animal_info, is_plotted=True,
                            plot_path="static/plot.png", file_path=file_path)
