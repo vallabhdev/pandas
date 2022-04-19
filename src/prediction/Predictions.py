@@ -47,6 +47,7 @@ def predict_population():
     m, b = linear_regression_for(X, Y)
     yr = int(year)
     y_hat = m * yr + b
+    y_hat = round(y_hat)
     pred_y = None
     if y_hat <= 0:
         pred_y = 0

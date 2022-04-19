@@ -1,13 +1,13 @@
 ﻿Animal,Country,Year,Population
 Elephant(African),Africa,1500,26000000
-Elephant(African),Africa,1913,10000000
-Elephant(African),Africa,1979,1300000
-Elephant(African),Africa,1995,286233
-Elephant(African),Africa,1998,301733
-Elephant(African),Africa,2002,402047
-Elephant(African),Africa,2007,472269
-Elephant(African),Africa,2013,426293
-Elephant(African),Africa,2015,415428
+Elephant(African),world,1913,10000000
+Elephant(African),world,1979,1300000
+Elephant(African),world,1995,286233
+Elephant(African),world,1998,301733
+Elephant(African),world,2002,402047
+Elephant(African),world,2007,472269
+Elephant(African),world,2013,426293
+Elephant(African),world,2015,415428
 Elephant(African),Angola,2007,818
 Elephant(African),Angola,2015,3396
 Elephant(African),Benin,2007,1223
@@ -102,15 +102,15 @@ Elephant(Asian),China,2006,189
 Elephant(Asian),China,2009,197
 Elephant(Asian),China,2014,232
 Elephant(Asian),China,2017,300
-Elephant(Asian),India,1980,15627
-Elephant(Asian),India,1985,18975
-Elephant(Asian),India,1989,20862
-Elephant(Asian),India,1993,15604
-Elephant(Asian),India,1997,25877
-Elephant(Asian),India,2002,26413
-Elephant(Asian),India,2007,27694
-Elephant(Asian),India,2012,29391
-Elephant(Asian),India,2017,27312
+Elephant(Asian),world,1980,15627
+Elephant(Asian),world,1985,18975
+Elephant(Asian),world,1989,20862
+Elephant(Asian),world,1993,15604
+Elephant(Asian),world,1997,25877
+Elephant(Asian),world,2002,26413
+Elephant(Asian),world,2007,27694
+Elephant(Asian),world,2012,29391
+Elephant(Asian),world,2017,27312
 Elephant(Asian),Indonesia,2007,2600
 Elephant(Asian),Indonesia,2012,1724
 Elephant(Asian),Laos,2012,700
@@ -187,25 +187,25 @@ Chimpanzee,world,1989,228000
 Chimpanzee,world,2000,230000
 Chimpanzee,world,2003,250000
 Chimpanzee,world,2020,300000
-Arctic fox,"Northern (Asia, America and Europe)",1978,3050
-Arctic fox,"Northern (Asia, America and Europe)",1980,3700
-Arctic fox,"Northern (Asia, America and Europe)",1982,4100
-Arctic fox,"Northern (Asia, America and Europe)",1984,4500
-Arctic fox,"Northern (Asia, America and Europe)",1986,5600
-Arctic fox,"Northern (Asia, America and Europe)",1988,5800
-Arctic fox,"Northern (Asia, America and Europe)",1990,5900
-Arctic fox,"Northern (Asia, America and Europe)",1992,5750
-Arctic fox,"Northern (Asia, America and Europe)",1994,5560
-Arctic fox,"Northern (Asia, America and Europe)",1996,5600
-Arctic fox,"Northern (Asia, America and Europe)",1998,6450
-Arctic fox,"Northern (Asia, America and Europe)",2000,7800
-Arctic fox,"Northern (Asia, America and Europe)",2002,8500
-Arctic fox,"Northern (Asia, America and Europe)",2004,8400
-Arctic fox,"Northern (Asia, America and Europe)",2006,10800
-Arctic fox,"Northern (Asia, America and Europe)",2008,11700
-Arctic fox,"Northern (Asia, America and Europe)",2010,7900
-Arctic fox,"Northern (Asia, America and Europe)",2012,6000
-Arctic fox,"Northern (Asia, America and Europe)",2014,6400
+Arctic Fox,world,1978,3050
+Arctic Fox,world,1980,3700
+Arctic Fox,world,1982,4100
+Arctic Fox,world,1984,4500
+Arctic Fox,world,1986,5600
+Arctic Fox,world,1988,5800
+Arctic Fox,world,1990,5900
+Arctic Fox,world,1992,5750
+Arctic Fox,world,1994,5560
+Arctic Fox,world,1996,5600
+Arctic Fox,world,1998,6450
+Arctic Fox,world,2000,7800
+Arctic Fox,world,2002,8500
+Arctic Fox,world,2004,8400
+Arctic Fox,world,2006,10800
+Arctic Fox,world,2008,11700
+Arctic Fox,world,2010,7900
+Arctic Fox,world,2012,6000
+Arctic fox,world,2014,6400
 Panda,world,1900,8600
 Panda,world,1910,7900
 Panda,world,1920,6000
@@ -227,13 +227,13 @@ Rhino(Sumatran),Malaysia,2007,100
 Rhino(Sumatran),Malaysia,2009,50
 Rhino(Sumatran),Malaysia,2016,0
 Rhino(Sumatran),Malaysia,2018,0
-Rhino(Sumatran),World,1985,600
-Rhino(Sumatran),World,1995,300
-Rhino(Sumatran),World,2007,280
-Rhino(Sumatran),World,2009,220
-Rhino(Sumatran),World,2013,100
-Rhino(Sumatran),World,2016,76
-Rhino(Sumatran),World,2018,59
+Rhino(Sumatran),world,1985,600
+Rhino(Sumatran),world,1995,300
+Rhino(Sumatran),world,2007,280
+Rhino(Sumatran),world,2009,220
+Rhino(Sumatran),world,2013,100
+Rhino(Sumatran),world,2016,76
+Rhino(Sumatran),world,2018,59
 Rhino(Black),Angola,1980,300
 Rhino(Black),Angola,1984,90
 Rhino(Black),Angola,1987,0
@@ -383,20 +383,20 @@ Rhino(Black),Uganda,1991,3
 Rhino(Black),Uganda,1992,0
 Rhino(Black),Uganda,1995,0
 Rhino(Black),Uganda,2017,0
-Rhino(Black),World,1960,100000
-Rhino(Black),World,1970,65000
-Rhino(Black),World,1980,14785
-Rhino(Black),World,1984,8800
-Rhino(Black),World,1987,3665
-Rhino(Black),World,1991,3450
-Rhino(Black),World,1992,2475
-Rhino(Black),World,1993,2550
-Rhino(Black),World,1995,2410
-Rhino(Black),World,2005,3726
-Rhino(Black),World,2010,4880
-Rhino(Black),World,2012,4845
-Rhino(Black),World,2015,5214
-Rhino(Black),World,2017,5495
+Rhino(Black),world,1960,100000
+Rhino(Black),world,1970,65000
+Rhino(Black),world,1980,14785
+Rhino(Black),world,1984,8800
+Rhino(Black),world,1987,3665
+Rhino(Black),world,1991,3450
+Rhino(Black),world,1992,2475
+Rhino(Black),world,1993,2550
+Rhino(Black),world,1995,2410
+Rhino(Black),world,2005,3726
+Rhino(Black),world,2010,4880
+Rhino(Black),world,2012,4845
+Rhino(Black),world,2015,5214
+Rhino(Black),world,2017,5495
 Rhino(Black),Zambia,1980,2750
 Rhino(Black),Zambia,1984,1650
 Rhino(Black),Zambia,1987,106
@@ -435,19 +435,19 @@ Rhino(Javan),Vietnam,2015,0
 Rhino(Javan),Vietnam,2016,0
 Rhino(Javan),Vietnam,2017,0
 Rhino(Javan),Vietnam,2018,0
-Rhino(Javan),World,1965,25
-Rhino(Javan),World,1975,30
-Rhino(Javan),World,1980,50
-Rhino(Javan),World,1985,60
-Rhino(Javan),World,1990,60
-Rhino(Javan),World,1995,50
-Rhino(Javan),World,2000,45
-Rhino(Javan),World,2005,40
-Rhino(Javan),World,2007,50
-Rhino(Javan),World,2009,41
-Rhino(Javan),World,2010,40
-Rhino(Javan),World,2013,58
-Rhino(Javan),World,2018,66
+Rhino(Javan),world,1965,25
+Rhino(Javan),world,1975,30
+Rhino(Javan),world,1980,50
+Rhino(Javan),world,1985,60
+Rhino(Javan),world,1990,60
+Rhino(Javan),world,1995,50
+Rhino(Javan),world,2000,45
+Rhino(Javan),world,2005,40
+Rhino(Javan),world,2007,50
+Rhino(Javan),world,2009,41
+Rhino(Javan),world,2010,40
+Rhino(Javan),world,2013,58
+Rhino(Javan),world,2018,66
 Rhino(Greater One-Horned Rhino),India,1986,1334
 Rhino(Greater One-Horned Rhino),India,2007,2150
 Rhino(Greater One-Horned Rhino),India,2009,2363
@@ -476,15 +476,15 @@ Rhino(Greater One-Horned Rhino),Pakistan,2007,2
 Rhino(Greater One-Horned Rhino),Pakistan,2009,2
 Rhino(Greater One-Horned Rhino),Pakistan,2016,0
 Rhino(Greater One-Horned Rhino),Pakistan,2018,0
-Rhino(Greater One-Horned Rhino),World,1910,40
-Rhino(Greater One-Horned Rhino),World,1966,40
-Rhino(Greater One-Horned Rhino),World,1972,670
-Rhino(Greater One-Horned Rhino),World,1980,1250
-Rhino(Greater One-Horned Rhino),World,1986,1711
-Rhino(Greater One-Horned Rhino),World,2007,2565
-Rhino(Greater One-Horned Rhino),World,2009,2800
-Rhino(Greater One-Horned Rhino),World,2016,3557
-Rhino(Greater One-Horned Rhino),World,2018,3588
+Rhino(Greater One-Horned Rhino),world,1910,40
+Rhino(Greater One-Horned Rhino),world,1966,40
+Rhino(Greater One-Horned Rhino),world,1972,670
+Rhino(Greater One-Horned Rhino),world,1980,1250
+Rhino(Greater One-Horned Rhino),world,1986,1711
+Rhino(Greater One-Horned Rhino),world,2007,2565
+Rhino(Greater One-Horned Rhino),world,2009,2800
+Rhino(Greater One-Horned Rhino),world,2016,3557
+Rhino(Greater One-Horned Rhino),world,2018,3588
 Rhino(Southern white),Botswana,1895,0
 Rhino(Southern white),Botswana,1929,0
 Rhino(Southern white),Botswana,1948,0
@@ -578,21 +578,21 @@ Rhino(Southern white),South Africa,2017,15625
 Rhino(Southern white),Uganda,2005,4
 Rhino(Southern white),Uganda,2010,9
 Rhino(Southern white),Uganda,2017,22
-Rhino(Southern white),World,1895,20
-Rhino(Southern white),World,1929,150
-Rhino(Southern white),World,1948,550
-Rhino(Southern white),World,1968,1800
-Rhino(Southern white),World,1984,3800
-Rhino(Southern white),World,1987,4665
-Rhino(Southern white),World,1991,5565
-Rhino(Southern white),World,1992,5790
-Rhino(Southern white),World,1993,6760
-Rhino(Southern white),World,1995,7530
-Rhino(Southern white),World,2005,14543
-Rhino(Southern white),World,2010,20160
-Rhino(Southern white),World,2012,21316
-Rhino(Southern white),World,2015,20053
-Rhino(Southern white),World,2017,18064
+Rhino(Southern white),world,1895,20
+Rhino(Southern white),world,1929,150
+Rhino(Southern white),world,1948,550
+Rhino(Southern white),world,1968,1800
+Rhino(Southern white),world,1984,3800
+Rhino(Southern white),world,1987,4665
+Rhino(Southern white),world,1991,5565
+Rhino(Southern white),world,1992,5790
+Rhino(Southern white),world,1993,6760
+Rhino(Southern white),world,1995,7530
+Rhino(Southern white),world,2005,14543
+Rhino(Southern white),world,2010,20160
+Rhino(Southern white),world,2012,21316
+Rhino(Southern white),world,2015,20053
+Rhino(Southern white),world,2017,18064
 Rhino(Southern white),Zambia,1895,0
 Rhino(Southern white),Zambia,1929,0
 Rhino(Southern white),Zambia,1948,0
@@ -649,35 +649,43 @@ Rhino(Northern white),Uganda,1984,0
 Rhino(Northern white),Uganda,1991,0
 Rhino(Northern white),Uganda,1995,0
 Rhino(Northern white),Uganda,1998,0
-Rhino(Northern white),World,1960,2230
-Rhino(Northern white),World,1971,650
-Rhino(Northern white),World,1976,500
-Rhino(Northern white),World,1981,350
-Rhino(Northern white),World,1983,70
-Rhino(Northern white),World,1984,15
-Rhino(Northern white),World,1991,30
-Rhino(Northern white),World,1995,31
-Rhino(Northern white),World,2005,4
-Rhino(Northern white),World,2010,4
-Rhino(Northern white),World,2012,4
-Rhino(Northern white),World,2015,3
-Rhino(Northern white),World,2017,3
-Rhino(Northern white),World,2018,2
-Jaguar,World,1960,300000
-Jaguar,World,1965,210000
-Jaguar,World,1970,120000
-Jaguar,World,1975,90000
-Jaguar,World,1980,60000
-Jaguar,World,1985,23000
-Jaguar,World,1990,22000
-Jaguar,World,1995,20500
-Jaguar,World,2000,20000
-Jaguar,World,2005,19500
-Jaguar,World,2010,18000
-Jaguar,World,2015,16000
-Jaguar,World,2020,15000
-cheetah,World,1900,100000
-cheetah,World,1980,25000
-cheetah,World,2008,17050
-cheetah,World,2013,10000
-cheetah,World,2022,7100
+Rhino(Northern white),world,1960,2230
+Rhino(Northern white),world,1971,650
+Rhino(Northern white),world,1976,500
+Rhino(Northern white),world,1981,350
+Rhino(Northern white),world,1983,70
+Rhino(Northern white),world,1984,15
+Rhino(Northern white),world,1991,30
+Rhino(Northern white),world,1995,31
+Rhino(Northern white),world,2005,4
+Rhino(Northern white),world,2010,4
+Rhino(Northern white),world,2012,4
+Rhino(Northern white),world,2015,3
+Rhino(Northern white),world,2017,3
+Rhino(Northern white),world,2018,2
+Jaguar,world,1960,300000
+Jaguar,world,1965,210000
+Jaguar,world,1970,120000
+Jaguar,world,1975,90000
+Jaguar,world,1980,60000
+Jaguar,world,1985,23000
+Jaguar,world,1990,22000
+Jaguar,world,1995,20500
+Jaguar,world,2000,20000
+Jaguar,world,2005,19500
+Jaguar,world,2010,18000
+Jaguar,world,2015,16000
+Jaguar,world,2020,15000
+Cheetah,world,1900,100000
+Cheetah,world,1980,25000
+Cheetah,world,2008,17050
+Cheetah,world,2013,10000
+Cheetah,world,2022,7100
+Panther,world,1986,30000
+Panther,world,1991,23000
+Panther,world,1996,20000
+Panther,world,2001,13000
+Panther,world,2006,12500
+Panther,world,2011,10000
+Panther,world,2016,5000
+Panther,world,2021,200
