@@ -91,47 +91,6 @@ Elephant(African),Zambia,2007,16562
 Elephant(African),Zambia,2015,21967
 Elephant(African),Zimbabwe,2007,84416
 Elephant(African),Zimbabwe,2015,82630
-Elephant(Asian),Bangladesh,2017,268
-Elephant(Asian),Bhutan,2010,513
-Elephant(Asian),Cambodia,2016,500
-Elephant(Asian),China,1976,146
-Elephant(Asian),China,1983,225
-Elephant(Asian),China,1997,216
-Elephant(Asian),China,2003,230
-Elephant(Asian),China,2006,189
-Elephant(Asian),China,2009,197
-Elephant(Asian),China,2014,232
-Elephant(Asian),China,2017,300
-Elephant(Asian),world,1980,15627
-Elephant(Asian),world,1985,18975
-Elephant(Asian),world,1989,20862
-Elephant(Asian),world,1993,15604
-Elephant(Asian),world,1997,25877
-Elephant(Asian),world,2002,26413
-Elephant(Asian),world,2007,27694
-Elephant(Asian),world,2012,29391
-Elephant(Asian),world,2017,27312
-Elephant(Asian),Indonesia,2007,2600
-Elephant(Asian),Indonesia,2012,1724
-Elephant(Asian),Laos,2012,700
-Elephant(Asian),Malaysia,2010,1223
-Elephant(Asian),Myanmar,2017,2000
-Elephant(Asian),Nepal,1903,328
-Elephant(Asian),Nepal,1913,234
-Elephant(Asian),Nepal,1923,198
-Elephant(Asian),Nepal,1933,199
-Elephant(Asian),Nepal,1943,180
-Elephant(Asian),Nepal,1953,136
-Elephant(Asian),Nepal,1963,80
-Elephant(Asian),Nepal,1973,47
-Elephant(Asian),Sri Lanka,2010,5879
-Elephant(Asian),Thailand,2017,3100
-Elephant(Asian),Vietnam,1980,1750
-Elephant(Asian),Vietnam,1992,500
-Elephant(Asian),Vietnam,1995,280
-Elephant(Asian),Vietnam,1997,165
-Elephant(Asian),Vietnam,2000,100
-Elephant(Asian),Vietnam,2016,101
 Lion,"Africa(central,East,West)",1993,4580
 Lion,"Africa(central,East,West)",1996,3610
 Lion,"Africa(central,East,West)",1998,3500
@@ -181,31 +140,31 @@ Lion,world,2010,33000
 Lion,world,2020,22500
 Chimpanzee,world,1900,2000000
 Chimpanzee,world,1960,1000000
-Chimpanzee,world,1979,100000
-Chimpanzee,world,1987,200000
+Chimpanzee,world,1979,300000
+Chimpanzee,world,1987,250000
 Chimpanzee,world,1989,228000
 Chimpanzee,world,2000,230000
-Chimpanzee,world,2003,250000
-Chimpanzee,world,2020,300000
-Arctic Fox,world,1978,3050
-Arctic Fox,world,1980,3700
-Arctic Fox,world,1982,4100
-Arctic Fox,world,1984,4500
-Arctic Fox,world,1986,5600
-Arctic Fox,world,1988,5800
-Arctic Fox,world,1990,5900
-Arctic Fox,world,1992,5750
-Arctic Fox,world,1994,5560
-Arctic Fox,world,1996,5600
-Arctic Fox,world,1998,6450
-Arctic Fox,world,2000,7800
-Arctic Fox,world,2002,8500
-Arctic Fox,world,2004,8400
-Arctic Fox,world,2006,10800
-Arctic Fox,world,2008,11700
-Arctic Fox,world,2010,7900
-Arctic Fox,world,2012,6000
-Arctic fox,world,2014,6400
+Chimpanzee,world,2003,200000
+Chimpanzee,world,2020,100000
+Arctic Fox,world,1978,11700
+Arctic Fox,world,1980,10800
+Arctic Fox,world,1982,8500
+Arctic Fox,world,1984,8400
+Arctic Fox,world,1986,7900
+Arctic Fox,world,1988,7800
+Arctic Fox,world,1990,6450
+Arctic Fox,world,1992,6400
+Arctic Fox,world,1994,6000
+Arctic Fox,world,1996,5900
+Arctic Fox,world,1998,5800
+Arctic Fox,world,2000,5750
+Arctic Fox,world,2002,5600
+Arctic Fox,world,2004,5600
+Arctic Fox,world,2006,5560
+Arctic Fox,world,2008,4500
+Arctic Fox,world,2010,4100
+Arctic Fox,world,2012,3700
+Arctic fox,world,2014,3050
 Panda,world,1900,8600
 Panda,world,1910,7900
 Panda,world,1920,6000
@@ -476,15 +435,15 @@ Rhino(Greater One-Horned Rhino),Pakistan,2007,2
 Rhino(Greater One-Horned Rhino),Pakistan,2009,2
 Rhino(Greater One-Horned Rhino),Pakistan,2016,0
 Rhino(Greater One-Horned Rhino),Pakistan,2018,0
-Rhino(Greater One-Horned Rhino),world,1910,40
-Rhino(Greater One-Horned Rhino),world,1966,40
-Rhino(Greater One-Horned Rhino),world,1972,670
-Rhino(Greater One-Horned Rhino),world,1980,1250
+Rhino(Greater One-Horned Rhino),world,1910,3588
+Rhino(Greater One-Horned Rhino),world,1966,3557
+Rhino(Greater One-Horned Rhino),world,1972,2800
+Rhino(Greater One-Horned Rhino),world,1980,2565
 Rhino(Greater One-Horned Rhino),world,1986,1711
-Rhino(Greater One-Horned Rhino),world,2007,2565
-Rhino(Greater One-Horned Rhino),world,2009,2800
-Rhino(Greater One-Horned Rhino),world,2016,3557
-Rhino(Greater One-Horned Rhino),world,2018,3588
+Rhino(Greater One-Horned Rhino),world,2007,1250
+Rhino(Greater One-Horned Rhino),world,2009,670
+Rhino(Greater One-Horned Rhino),world,2016,40
+Rhino(Greater One-Horned Rhino),world,2018,40
 Rhino(Southern white),Botswana,1895,0
 Rhino(Southern white),Botswana,1929,0
 Rhino(Southern white),Botswana,1948,0
