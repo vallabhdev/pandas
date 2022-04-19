@@ -53,7 +53,10 @@ def predict_population():
     else:
         pred_y = y_hat
     plt.plot(X, Y, label=name)
+    plt.xlabel('Years')
+    plt.ylabel('Population')
     plt.legend()
+    plt.title("Population vs Years trend for  " + name)
     plt.savefig('../ui/static/plot.png')
     animal_info = get_all_details_for(name)
     file_path = request.args.get("file_path")
