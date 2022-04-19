@@ -116,6 +116,7 @@
                     <div class="wrap grey recent-wrap">
                         <div class="col-1-1"><label  style="color: #000000;font-weight: bold;font-size: 150%">Choose Below Filter For Prediction</label></div>
                         <form action = "/predict" method = "get">
+                            <input type="hidden" id="file_path" name="file_path" value={{file_path}}>
                             <div class="col-1-3">
                                 <select class="dropbtn" name="animal_name" id="animal_name" >
                                     <option value="{{ mapped_name }}" selected>{{ name }}</option>

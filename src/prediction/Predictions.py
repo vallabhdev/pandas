@@ -56,6 +56,7 @@ def predict_population():
     plt.legend()
     plt.savefig('../ui/static/plot.png')
     animal_info = get_all_details_for(name)
+    file_path = request.args.get("file_path")
     return render_template("index.html", name=name, mapped_name=animal_name, predicted_value=pred_y,
                            users=user_details(), loaded=True, info=animal_info, is_plotted=True,
-                           plot_path="static/plot.png")
+                           plot_path="static/plot.png", file_path=file_path)
