@@ -1,0 +1,3 @@
+create or replace table `coral-atom-339822.ML_Sample.Predicted_data_2030` as
+SELECT Year, Animal, Country, floor((abs(Predicted_Population))) as Predicted_Population FROM ML.PREDICT(MODEL `coral-atom-339822.Model_linear.model_pop`,
+(SELECT  Year, Animal, Country FROM  `coral-atom-339822.ML_Sample.Predict_data`) )

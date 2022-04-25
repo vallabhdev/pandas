@@ -1,0 +1,5 @@
+SELECT * FROM `coral-atom-339822.ML_Sample.All_Animal` as AA FULL OUTER JOIN (
+SELECT EL.Animal FROM `coral-atom-339822.ML_Sample.Elephant` as EL FULL OUTER JOIN `coral-atom-339822.ML_Sample.Rhino` as RH
+ON EL.Country = RH.Country
+) as ER on ER.Animal = AA.Animal
+where  AA.Animal <> "world"

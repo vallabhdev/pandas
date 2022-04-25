@@ -1,0 +1,12 @@
+CREATE OR REPLACE MODEL Model_linear.model_pop
+OPTIONS(
+model_type="linear_reg",
+LS_INIT_LEARN_RATE=0.15, 
+L1_REG=1,MAX_ITERATIONS=5, 
+DATA_SPLIT_METHOD='SEQ', 
+DATA_SPLIT_EVAL_FRACTION=0.3, 
+DATA_SPLIT_COL='Animal' , 
+input_label_cols=['Population']) AS
+SELECT Country, Year, Animal, Population FROM `coral-atom-339822.ML_Sample.All_Animal` 
+WHERE Population IS NOT NULL and Year>1900
+--group by year
